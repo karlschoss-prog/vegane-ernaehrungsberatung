@@ -1,26 +1,62 @@
 @import "tailwindcss";
 
+@theme {
+  /* Colors */
+  --color-sage: #8BAB8D;
+  --color-sage-dark: #5C7A5E;
+  --color-sage-light: #D4E4D5;
+  --color-taupe: #C4A882;
+  --color-cream: #FDF8F0;
+  --color-blush: #E8C4B8;
+  --color-blush-dark: #A0624F;
+  --color-charcoal: #2D2D2D;
+  --color-soft-gray: #6B6B6B;
+
+  /* Fonts */
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-nunito), system-ui, sans-serif;
+
+  /* Border Radius */
+  --radius-card: 12px;
+  --radius-card-lg: 20px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FDF8F0;
+  --foreground: #2D2D2D;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Utility classes used across the site */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
