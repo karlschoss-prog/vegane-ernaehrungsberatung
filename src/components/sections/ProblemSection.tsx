@@ -17,8 +17,17 @@ export default function ProblemSection() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="section-padding bg-cream">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section-padding bg-cream relative overflow-hidden">
+      {/* Background accent */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: "radial-gradient(ellipse 80% 60% at 50% 100%, rgba(184,92,56,0.05) 0%, transparent 70%)",
+        }}
+        aria-hidden="true"
+      />
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           ref={ref}
           variants={staggerContainer}
@@ -26,9 +35,7 @@ export default function ProblemSection() {
           animate={isInView ? "visible" : "hidden"}
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-light italic text-charcoal mb-4">
-              Kennst du das?
-            </h2>
+            <span className="font-script text-4xl text-taupe block mb-2">Kennst du das?</span>
             <p className="text-soft-gray max-w-xl mx-auto leading-relaxed">
               Du liebst deine vegane Ernährung – für dich, für dein Baby, für die Welt.
               <br />
@@ -37,13 +44,20 @@ export default function ProblemSection() {
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-            {quotes.map((quote) => (
+            {quotes.map((quote, i) => (
               <motion.div
                 key={quote}
                 variants={fadeInUp}
-                className="bg-white border border-blush/50 rounded-card-lg p-5 shadow-sm"
+                className="bg-white border rounded-card-lg p-5 shadow-sm relative overflow-hidden"
+                style={{ borderColor: "rgba(184,92,56,0.25)" }}
               >
-                <p className="font-serif text-lg italic text-charcoal leading-relaxed">{quote}</p>
+                {/* Terracotta corner accent */}
+                <div
+                  className="absolute top-0 left-0 w-1 h-full rounded-l-card-lg"
+                  style={{ background: i % 2 === 0 ? "#B85C38" : "#2E5C32", opacity: 0.5 }}
+                  aria-hidden="true"
+                />
+                <p className="font-serif text-lg italic text-charcoal leading-relaxed pl-2">{quote}</p>
               </motion.div>
             ))}
           </div>
@@ -59,8 +73,8 @@ export default function ProblemSection() {
               <br />
               Gut geplant versorgt sie dich und dein Kind mit allem, was ihr braucht.
             </p>
-            <p className="font-semibold text-sage-dark text-lg">
-              Und genau diese Sicherheit gebe ich dir.
+            <p className="font-script text-2xl text-sage-dark">
+              Und genau diese Sicherheit gebe ich dir. ✦
             </p>
           </motion.div>
         </motion.div>

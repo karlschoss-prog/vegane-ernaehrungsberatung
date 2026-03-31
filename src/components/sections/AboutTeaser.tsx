@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { staggerContainer, slideInFromLeft, slideInFromRight } from "@/lib/animations";
 
 export default function AboutTeaser() {
@@ -28,12 +27,11 @@ export default function AboutTeaser() {
               className="relative w-72 h-80 md:w-80 md:h-96 rounded-card-lg overflow-hidden shadow-md"
               style={{ boxShadow: "0 12px 40px rgba(91,122,94,0.12)" }}
             >
-              <Image
-                src="/christin.jpg"
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/vegane-ernaehrungsberatung/christin.jpg"
                 alt="Christin Schoß – Zertifizierte vegane Ernährungsberaterin"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 768px) 288px, 320px"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </motion.div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Nunito_Sans } from "next/font/google";
+import { Cormorant_Garamond, Nunito_Sans, Caveat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -17,6 +17,13 @@ const nunito = Nunito_Sans({
   variable: "--font-nunito",
   subsets: ["latin"],
   weight: ["300", "400", "600", "700"],
+  display: "swap",
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  weight: ["400", "600"],
   display: "swap",
 });
 
@@ -66,7 +73,7 @@ export default function RootLayout({
   return (
     <html
       lang="de"
-      className={`${cormorant.variable} ${nunito.variable} h-full`}
+      className={`${cormorant.variable} ${nunito.variable} ${caveat.variable} h-full`}
     >
       <head>
         <script
