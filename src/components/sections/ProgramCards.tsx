@@ -32,6 +32,7 @@ export default function ProgramCards() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
             {/* Program 1 */}
+
             <motion.div
               variants={fadeInUp}
               className="bg-white rounded-card-lg p-7 shadow-sm border border-sage-light hover:shadow-xl hover:border-sage-dark hover:-translate-y-1 transition-all duration-200 group cursor-pointer"
@@ -109,6 +110,20 @@ export default function ProgramCards() {
               </Link>
             </motion.div>
           </div>
+
+          {/* Individual request hint */}
+          <motion.div variants={fadeInUp} className="mt-10 text-center">
+            <p className="text-soft-gray text-sm">
+              Anderes Thema im Kopf? Vegane Ernährung, Abnehmen, allgemeine Beratung …{" "}
+              <Link
+                href="/kontakt"
+                className="text-sage-dark font-semibold underline underline-offset-2 hover:text-charcoal transition-colors"
+              >
+                Schreib mir einfach
+              </Link>{" "}
+              – ich erstelle dir gerne ein individuelles Angebot.
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </section>
