@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { Calendar, Mail, ExternalLink, Check } from "lucide-react";
+import { Calendar, Check } from "lucide-react";
 
 function InstagramIcon({ size = 18 }: { size?: number }) {
   return (
@@ -35,6 +36,14 @@ import ContactForm from "@/components/forms/ContactForm";
 
 export default function KontaktPage() {
   const shouldReduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (window.location.hash === "#schreib-mir") {
+      setTimeout(() => {
+        document.getElementById("schreib-mir")?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, []);
 
   return (
     <>
@@ -153,7 +162,7 @@ export default function KontaktPage() {
       </section>
 
       {/* Kontaktformular + Alternativ */}
-      <section className="section-padding bg-cream">
+      <section id="schreib-mir" className="section-padding bg-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div

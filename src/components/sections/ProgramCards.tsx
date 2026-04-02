@@ -116,7 +116,7 @@ export default function ProgramCards() {
             <p className="text-soft-gray text-sm">
               Anderes Thema im Kopf? Vegane Ernährung, Abnehmen, allgemeine Beratung …{" "}
               <Link
-                href="/kontakt"
+                href="/kontakt#schreib-mir"
                 className="text-sage-dark font-semibold underline underline-offset-2 hover:text-charcoal transition-colors"
               >
                 Schreib mir einfach
