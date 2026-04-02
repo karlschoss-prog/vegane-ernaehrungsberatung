@@ -307,6 +307,13 @@ export default function SichererBeikostPage() {
                 Direkt buchen
               </a>
             </motion.div>
+
+            <motion.p variants={fadeInUp} className="mt-8 text-white/50 text-sm">
+              Fragen oder ein anderes Anliegen?{" "}
+              <a href="/kontakt#schreib-mir" className="text-white/80 font-semibold underline underline-offset-2 hover:text-white transition-colors">
+                Schreib mir gerne.
+              </a>
+            </motion.p>
           </motion.div>
         </div>
       </section>

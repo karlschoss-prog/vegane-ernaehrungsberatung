@@ -166,6 +166,20 @@ export default function KontaktPage() {
                 </Button>
               </motion.div>
             </div>
+            <motion.div
+              variants={fadeInUp}
+              initial={shouldReduceMotion ? "visible" : "hidden"}
+              whileInView="visible"
+              viewport={{ once: true, margin: "-10%" }}
+              className="mt-8 text-center"
+            >
+              <p className="text-soft-gray text-sm">
+                Fragen oder ein anderes Anliegen?{" "}
+                <a href="#schreib-mir" className="text-sage-dark font-semibold underline underline-offset-2 hover:text-charcoal transition-colors">
+                  Schreib mir gerne.
+                </a>
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -203,6 +217,21 @@ export default function KontaktPage() {
                 Alternativ erreichst du mich
               </motion.h2>
               <div className="space-y-4">
+                <motion.a
+                  variants={fadeInUp}
+                  href={SITE.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-4 bg-white rounded-card border border-sage-light shadow-sm hover:shadow-md transition-shadow group"
+                >
+                  <div className="w-10 h-10 rounded-full bg-sage-light flex items-center justify-center group-hover:bg-sage/20 transition-colors">
+                    <WhatsAppIcon size={18} />
+                  </div>
+                  <div>
+                    <p className="text-xs text-soft-gray">WhatsApp</p>
+                    <p className="font-medium text-charcoal">Schreib mir direkt</p>
+                  </div>
+                </motion.a>
                 <motion.a
                   variants={fadeInUp}
                   href={SITE.instagram}
@@ -246,21 +275,6 @@ export default function KontaktPage() {
                   <div>
                     <p className="text-xs text-soft-gray">YouTube</p>
                     <p className="font-medium text-charcoal">{SITE.youtubeHandle}</p>
-                  </div>
-                </motion.a>
-                <motion.a
-                  variants={fadeInUp}
-                  href={SITE.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-4 bg-white rounded-card border border-sage-light shadow-sm hover:shadow-md transition-shadow group"
-                >
-                  <div className="w-10 h-10 rounded-full bg-sage-light flex items-center justify-center group-hover:bg-sage/20 transition-colors">
-                    <WhatsAppIcon size={18} />
-                  </div>
-                  <div>
-                    <p className="text-xs text-soft-gray">WhatsApp</p>
-                    <p className="font-medium text-charcoal">Schreib mir direkt</p>
                   </div>
                 </motion.a>
               </div>
