@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
-import { Award, BookOpen, Heart } from "lucide-react";
+import { Award, BookOpen, Heart, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { staggerContainer, fadeInUp, slideInFromLeft, slideInFromRight } from "@/lib/animations";
@@ -156,6 +156,50 @@ export default function UeberMichPage() {
               Wissen. Die Schwangerschaft ist die Phase, in der Ernährung am meisten zählt – und ich
               wollte alles dafür tun, dass mein Baby optimal versorgt ist.
             </motion.p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Social Media */}
+      <section className="section-padding bg-cream">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={staggerContainer}
+            initial={shouldReduceMotion ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, margin: "-10%" }}
+          >
+            <motion.h2 variants={fadeInUp} className="font-serif text-3xl sm:text-4xl font-light text-charcoal mb-4">
+              Folge mir auf Social Media
+            </motion.h2>
+            <motion.p variants={fadeInUp} className="text-soft-gray leading-relaxed mb-8">
+              Auf Instagram, TikTok und YouTube teile ich jede Woche neuen Content rund um vegane
+              Ernährung, Schwangerschaft, Beikost und das Leben mit einem kleinen Kind. Praxisnah,
+              wissenschaftlich fundiert – und aus meinem eigenen Alltag. Folge mir gerne, wenn du
+              keine Beiträge verpassen möchtest.
+            </motion.p>
+            <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                { label: "Instagram", handle: SITE.instagramHandle, href: SITE.instagram, bg: "bg-sage-light/60" },
+                { label: "TikTok", handle: SITE.tiktokHandle, href: SITE.tiktok, bg: "bg-blush/30" },
+                { label: "YouTube", handle: SITE.youtubeHandle, href: SITE.youtube, bg: "bg-taupe/10" },
+              ].map((s) => (
+                <motion.a
+                  key={s.label}
+                  variants={fadeInUp}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`group flex flex-col gap-2 rounded-card-lg p-5 border border-sage-light ${s.bg} hover:shadow-md transition-all`}
+                >
+                  <p className="text-xs font-semibold uppercase tracking-widest text-soft-gray">{s.label}</p>
+                  <p className="font-semibold text-charcoal leading-snug">{s.handle}</p>
+                  <span className="inline-flex items-center gap-1 text-xs text-sage-dark font-semibold mt-auto group-hover:gap-2 transition-all">
+                    Jetzt folgen <ArrowRight size={12} />
+                  </span>
+                </motion.a>
+              ))}
+            </motion.div>
           </motion.div>
         </div>
       </section>
