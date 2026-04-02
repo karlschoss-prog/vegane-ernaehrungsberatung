@@ -116,7 +116,21 @@ export default function DatenschutzPage() {
           </div>
 
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">9. Externe Links</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">9. WhatsApp</h2>
+            <p>
+              Du hast die Möglichkeit, mich über WhatsApp zu kontaktieren. WhatsApp wird betrieben
+              von Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2,
+              Irland. Wenn du eine Nachricht über WhatsApp sendest, werden deine Telefonnummer sowie
+              der Inhalt deiner Nachricht von Meta verarbeitet. Es kann dabei zu einer Übermittlung
+              von Daten in die USA kommen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
+              (Vertragsanbahnung bzw. Beantwortung deiner Anfrage). Die Nutzung von WhatsApp erfolgt
+              freiwillig; alternativ steht dir das Kontaktformular auf dieser Website zur Verfügung.
+              Weitere Informationen zum Datenschutz bei Meta: whatsapp.com/legal/privacy-policy
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">10. Externe Links</h2>
             <p>
               Diese Website enthält Links zu Instagram und TikTok. Wenn du diese Links aufrufst,
               gelten die jeweiligen Datenschutzbestimmungen der Plattformen. Wir haben keinen

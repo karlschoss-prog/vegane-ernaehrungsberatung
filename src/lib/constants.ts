@@ -10,6 +10,7 @@ export const SITE = {
   tiktokHandle: "@ernaehrung.by.tinboom",
   youtube: "https://www.youtube.com/@tins_ernährungstipps",
   youtubeHandle: "@tins_ernährungstipps",
+  whatsapp: "https://wa.me/49XXXXXXXXXXX", // Platzhalter – Nummer von Christin ausstehend
 };
 
 export const AFFILIATE = {
