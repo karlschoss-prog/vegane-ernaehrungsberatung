@@ -114,14 +114,13 @@ export default function ProgramCards() {
           {/* Individual request hint */}
           <motion.div variants={fadeInUp} className="mt-10 text-center">
             <p className="text-soft-gray text-sm">
-              Anderes Thema im Kopf? Vegane Ernährung, Abnehmen, allgemeine Beratung …{" "}
+              Fragen oder ein anderes Anliegen?{" "}
               <Link
                 href="/kontakt#schreib-mir"
                 className="text-sage-dark font-semibold underline underline-offset-2 hover:text-charcoal transition-colors"
               >
-                Schreib mir einfach
-              </Link>{" "}
-              – ich erstelle dir gerne ein individuelles Angebot.
+                Schreib mir gerne.
+              </Link>
             </p>
           </motion.div>
         </motion.div>
