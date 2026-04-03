@@ -13,20 +13,20 @@ const products = [
       {
         name: "Protein Shake",
         desc: "Die meisten Menschen nehmen täglich zu wenig Eiweiß zu sich – auch in der Schwangerschaft und Stillzeit ist eine ausreichende Proteinzufuhr entscheidend. Der pflanzliche Protein Shake von Watson Nutrition ist eine einfache und leckere Möglichkeit, den täglichen Bedarf zu decken.",
-        note: "Mein Lieblingsgeschmack ist Kaffee – absolut empfehlenswert!",
+        note: "Mein Lieblingsgeschmack ist Kaffee, absolut empfehlenswert!",
         link: "https://watsonnutrition.de/products/veganes-clear-protein?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Protein Shake *",
       },
       {
         name: "Female All In One",
-        desc: "Ein speziell auf Frauen abgestimmter Multinährstoff, der die wichtigsten Vitamine, Mineralstoffe und Spurenelemente – inklusive Vitamin D – abdeckt. Ideal als tägliche Basis-Versorgung für Frauen in jeder Lebensphase.",
+        desc: "Ein speziell auf Frauen abgestimmter Multinährstoff, der die wichtigsten Vitamine, Mineralstoffe und Spurenelemente (inklusive Vitamin D) abdeckt. Ideal als tägliche Basis-Versorgung für Frauen in jeder Lebensphase.",
         note: null,
         link: "https://watsonnutrition.de/products/female-all-in-one?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Female All In One *",
       },
       {
         name: "Omega-3-Kapseln (EPA, DHA & ARA)",
-        desc: "Algenöl-basiert und damit rein pflanzlich. Omega-3-Fettsäuren sind essenziell – sie unterstützen Herz-Kreislauf-System, Gehirnfunktion und haben entzündungshemmende Eigenschaften. Ich empfehle sie in jeder Lebensphase.",
+        desc: "Algenöl-basiert und damit rein pflanzlich. Omega-3-Fettsäuren sind essenziell: sie unterstützen Herz-Kreislauf-System, Gehirnfunktion und haben entzündungshemmende Eigenschaften. Ich empfehle sie in jeder Lebensphase.",
         note: null,
         link: "https://watsonnutrition.de/products/omega-3?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Omega-3 *",
@@ -52,7 +52,7 @@ const products = [
       },
       {
         name: "Omega-3-Kapseln (EPA, DHA & ARA)",
-        desc: "Algenöl-basiert, für die Gehirn- und Augenentwicklung deines Babys. DHA und Cholin wirken synergistisch – eine kombinierte Supplementierung zeigt in Studien bessere Ergebnisse.",
+        desc: "Algenöl-basiert, für die Gehirn- und Augenentwicklung deines Babys. DHA und Cholin wirken synergistisch, eine kombinierte Supplementierung zeigt in Studien bessere Ergebnisse.",
         note: null,
         link: "https://watsonnutrition.de/products/omega-3?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Omega-3 *",
@@ -78,35 +78,35 @@ const products = [
       },
       {
         name: "Cholin (Lecithin)",
-        desc: "Essenziell für die Gehirn- und Nervenentwicklung deines Babys – und einer der am häufigsten unterschätzten Nährstoffe. 93 % der Schwangeren erreichen die empfohlene Cholinzufuhr nicht.",
+        desc: "Essenziell für die Gehirn- und Nervenentwicklung deines Babys und einer der am häufigsten unterschätzten Nährstoffe. 93 % der Schwangeren erreichen die empfohlene Cholinzufuhr nicht.",
         note: null,
         link: "https://watsonnutrition.de/products/lecithin?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Cholin *",
       },
       {
         name: "Calcium-Kapseln",
-        desc: "Sinnvoll, wenn du nicht regelmäßig calciumangereicherte Pflanzendrinks trinkst. In der Schwangerschaft steigt der Calciumbedarf – eine ausreichende Versorgung ist wichtig für die Knochenentwicklung deines Babys.",
+        desc: "Sinnvoll, wenn du nicht regelmäßig calciumangereicherte Pflanzendrinks trinkst. In der Schwangerschaft steigt der Calciumbedarf, eine ausreichende Versorgung ist wichtig für die Knochenentwicklung deines Babys.",
         note: null,
         link: "https://watsonnutrition.de/products/calcium-kapseln?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Calcium *",
       },
       {
         name: "Collasyn oder Monoglycin",
-        desc: "Glycin ist die häufigste Aminosäure im Bindegewebe und wird in der Schwangerschaft verstärkt benötigt. Collasyn oder Monoglycin unterstützt das Bindegewebe und empfehle ich in allen Phasen – von der Schwangerschaft bis in den Alltag.",
+        desc: "Glycin ist die häufigste Aminosäure im Bindegewebe und wird in der Schwangerschaft verstärkt benötigt. Collasyn oder Monoglycin unterstützt das Bindegewebe, ich empfehle es in allen Phasen.",
         note: null,
         link: "https://watsonnutrition.de/products/collasyn?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Collasyn *",
       },
       {
         name: "Protein Shake",
-        desc: "In der Schwangerschaft steigt der Proteinbedarf deutlich. Der pflanzliche Protein Shake ist eine einfache Möglichkeit, den erhöhten Bedarf zu decken – ohne großen Aufwand im Alltag.",
+        desc: "In der Schwangerschaft steigt der Proteinbedarf deutlich. Der pflanzliche Protein Shake ist eine einfache Möglichkeit, den erhöhten Bedarf ohne großen Aufwand im Alltag zu decken.",
         note: null,
         link: "https://watsonnutrition.de/products/veganes-clear-protein?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Protein Shake *",
       },
       {
         name: "Omega-3-Kapseln (EPA, DHA & ARA)",
-        desc: "Algenöl-basiert, für die Gehirn- und Augenentwicklung deines Babys. DHA und Cholin wirken synergistisch – eine kombinierte Supplementierung zeigt in Studien bessere Ergebnisse.",
+        desc: "Algenöl-basiert, für die Gehirn- und Augenentwicklung deines Babys. DHA und Cholin wirken synergistisch, eine kombinierte Supplementierung zeigt in Studien bessere Ergebnisse.",
         note: null,
         link: "https://watsonnutrition.de/products/omega-3?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Omega-3 *",
@@ -118,7 +118,7 @@ const products = [
     items: [
       {
         name: "Stillzeit All In One",
-        desc: "Nach der Geburt verändern sich die Nährstoffbedürfnisse erneut. Dieses Präparat ist speziell auf die Zufuhrempfehlungen für die Stillzeit angepasst – damit du und dein Baby auch nach der Geburt optimal versorgt seid.",
+        desc: "Nach der Geburt verändern sich die Nährstoffbedürfnisse erneut. Dieses Präparat ist speziell auf die Zufuhrempfehlungen für die Stillzeit angepasst, damit du und dein Baby auch nach der Geburt optimal versorgt seid.",
         note: "Soll nach dem Aufbrauchen der letzten Packung Pregnancy All In One bis zum vollständigen Abstillen verwendet werden.",
         link: "https://watsonnutrition.de/products/stillzeit-all-in-one?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Stillzeit All In One *",
@@ -139,7 +139,7 @@ const products = [
       },
       {
         name: "Protein Shake",
-        desc: "Auch in der Stillzeit bleibt der Proteinbedarf erhöht. Der pflanzliche Protein Shake hilft, den Bedarf unkompliziert zu decken – besonders in der oft hektischen Zeit mit Neugeborenem.",
+        desc: "Auch in der Stillzeit bleibt der Proteinbedarf erhöht. Der pflanzliche Protein Shake hilft, den Bedarf unkompliziert zu decken, besonders in der oft hektischen Zeit mit Neugeborenem.",
         note: null,
         link: "https://watsonnutrition.de/products/veganes-clear-protein?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Protein Shake *",
@@ -172,7 +172,7 @@ const products = [
       },
       {
         name: "Omega-3-Kapseln (EPA, DHA & ARA)",
-        desc: "Auch für Kinder ist eine ausreichende Omega-3-Versorgung essenziell – für Gehirnentwicklung, Konzentrationsfähigkeit und ein gesundes Immunsystem.",
+        desc: "Auch für Kinder ist eine ausreichende Omega-3-Versorgung essenziell, für Gehirnentwicklung, Konzentrationsfähigkeit und ein gesundes Immunsystem.",
         note: null,
         link: "https://watsonnutrition.de/products/omega-3?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Omega-3 *",
@@ -228,7 +228,7 @@ export default function SupplementsPage() {
               <p className="text-sm text-charcoal">
                 <strong>Affiliate-Hinweis:</strong> Die mit * gekennzeichneten Links sind
                 Affiliate-Links. Wenn du über diese Links bestellst, erhalte ich eine kleine
-                Provision – für dich entstehen keine Mehrkosten.{" "}
+                Provision, für dich entstehen keine Mehrkosten.{" "}
                 Ich empfehle nur Produkte, die ich selbst täglich nutze und von Herzen weiterempfehle.
               </p>
             </div>
@@ -314,7 +314,7 @@ export default function SupplementsPage() {
               Supplements sind ein wichtiger Baustein.
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-white/70 mb-8">
-              In meinen Programmen begleite ich dich durch alles, was dich und dein Baby stärkt –
+              In meinen Programmen begleite ich dich durch alles, was dich und dein Baby stärkt,
               von der Ernährung über die Nährstoffe bis weit über die Schwangerschaft hinaus.
             </motion.p>
             <motion.div variants={fadeInUp}>

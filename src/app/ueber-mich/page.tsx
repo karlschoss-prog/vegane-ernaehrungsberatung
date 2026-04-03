@@ -153,7 +153,7 @@ export default function UeberMichPage() {
             </div>
             <motion.p variants={fadeInUp} className="text-soft-gray leading-relaxed mt-8 max-w-2xl mx-auto text-center">
               Als ich erfahren habe, dass ich schwanger bin, war für mich klar: Ich vertiefe mein
-              Wissen. Die Schwangerschaft ist die Phase, in der Ernährung am meisten zählt – und ich
+              Wissen. Die Schwangerschaft ist die Phase, in der Ernährung am meisten zählt, und ich
               wollte alles dafür tun, dass mein Baby optimal versorgt ist.
             </motion.p>
           </motion.div>
@@ -217,7 +217,7 @@ export default function UeberMichPage() {
             </motion.h2>
             <motion.div variants={fadeInUp} className="space-y-5 text-soft-gray leading-relaxed mb-8">
               <p>
-                Heute bin ich Mama einer gesunden Tochter – vegan von Anfang an. Meine Schwangerschaft
+                Heute bin ich Mama einer gesunden Tochter, vegan von Anfang an. Meine Schwangerschaft
                 war eine der schönsten Zeiten meines Lebens, weil ich sie ohne Angst und ohne
                 Unsicherheit erleben durfte.
               </p>
@@ -233,7 +233,7 @@ export default function UeberMichPage() {
                 das richtige Wissen geben kann.
               </p>
               <p>
-                Das gilt für mich ganzheitlich – vom Teller bis zur Pflege. Deshalb vertraue ich
+                Das gilt für mich ganzheitlich, vom Teller bis zur Pflege. Deshalb vertraue ich
                 auch bei Kosmetik auf frische, vegane Produkte von{" "}
                 <a
                   href={AFFILIATE.ringana}
@@ -251,13 +251,13 @@ export default function UeberMichPage() {
               <h3 className="font-serif text-xl font-semibold text-charcoal mb-3">Mein Ansatz</h3>
               <p className="text-soft-gray leading-relaxed mb-3">
                 Ich glaube nicht an schnelle Tipps oder Pauschalpläne. Jede Frau, jeder Körper,
-                jede Schwangerschaft ist anders – deshalb arbeite ich nur 1:1 und mit wenigen
+                jede Schwangerschaft ist anders, deshalb arbeite ich nur 1:1 und mit wenigen
                 Kundinnen gleichzeitig.
               </p>
               <p className="text-soft-gray leading-relaxed">
                 Meine Programme sind intensiv, weil echte Veränderung Zeit braucht. Wir erarbeiten
-                gemeinsam eine Strategie, die zu deinem Leben passt. Nicht perfekt, nicht kompliziert
-                – sondern machbar und sicher.
+                gemeinsam eine Strategie, die zu deinem Leben passt. Nicht perfekt, nicht kompliziert,
+                sondern machbar und sicher.
               </p>
             </motion.div>
 

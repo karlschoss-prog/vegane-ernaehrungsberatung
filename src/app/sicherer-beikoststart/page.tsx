@@ -15,7 +15,7 @@ const included = [
   {
     icon: ClipboardList,
     title: "Individueller Beikostplan",
-    desc: "Kein Schema F – sondern ein Plan, der auf dein Kind, euren Alltag und eure Vorlieben abgestimmt ist.",
+    desc: "Kein Schema F, sondern ein Plan, der auf dein Kind, euren Alltag und eure Vorlieben abgestimmt ist.",
   },
   {
     icon: Check,
@@ -30,12 +30,12 @@ const included = [
   {
     icon: Search,
     title: "Supplement-Check & Nährstofffokus",
-    desc: "Welche Supplements braucht dein Kind wirklich? Wir schauen genau hin – keine Über-, keine Unterversorgung.",
+    desc: "Welche Supplements braucht dein Kind wirklich? Wir schauen genau hin, ohne Über- oder Unterversorgung.",
   },
   {
     icon: Utensils,
     title: "Praktische Umsetzung im Alltag",
-    desc: "Rezeptideen, Zubereitungstipps und konkrete Hilfestellungen, die wirklich funktionieren – auch an stressigen Tagen.",
+    desc: "Rezeptideen, Zubereitungstipps und konkrete Hilfestellungen, die wirklich funktionieren. Auch an stressigen Tagen.",
   },
 ];
 
@@ -151,7 +151,7 @@ export default function SichererBeikostPage() {
             <motion.div variants={fadeInUp} className="bg-blush/20 border border-blush/40 rounded-card p-4">
               <p className="text-sm text-charcoal">
                 <strong>Dieses Programm passt nicht zu dir, wenn</strong> du nach einem fertigen
-                Universalplan suchst. Jedes Kind ist anders – und genau deshalb arbeite ich individuell.
+                Universalplan suchst. Jedes Kind ist anders, und genau deshalb arbeite ich individuell.
               </p>
             </motion.div>
           </motion.div>

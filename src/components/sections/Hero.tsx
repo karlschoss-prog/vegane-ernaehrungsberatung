@@ -80,7 +80,7 @@ export default function Hero() {
                 schwanger.
               </span>
               <span className="block text-2xl sm:text-3xl lg:text-4xl font-light italic text-taupe mt-3 leading-snug">
-                Sicher begleitet –<br className="hidden sm:block" /> durch Schwangerschaft & Beikoststart.
+                Sicher begleitet, durch Schwangerschaft & Beikoststart.
               </span>
             </motion.h1>
 

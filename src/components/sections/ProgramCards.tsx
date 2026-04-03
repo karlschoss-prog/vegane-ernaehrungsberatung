@@ -127,7 +127,7 @@ export default function ProgramCards() {
                   Sicher stillen
                 </h3>
                 <p className="text-sm text-soft-gray/80 leading-relaxed mb-5">
-                  Vegane Ernährung in der Stillzeit – optimal versorgt trotz erhöhtem Kalorienbedarf, weniger Heißhunger und mehr Energie für dich und dein Baby.
+                  Vegane Ernährung in der Stillzeit: optimal versorgt trotz erhöhtem Kalorienbedarf, weniger Heißhunger und mehr Energie für dich und dein Baby.
                 </p>
                 <Link
                   href="/kontakt#schreib-mir"
@@ -152,7 +152,7 @@ export default function ProgramCards() {
                   Vegan & leicht
                 </h3>
                 <p className="text-sm text-soft-gray/80 leading-relaxed mb-5">
-                  Vegan abnehmen nach der Schwangerschaft – nachhaltig, ohne Verzicht und mit einem Plan, der in deinen Alltag als Mama passt.
+                  Vegan abnehmen nach der Schwangerschaft, nachhaltig, ohne Verzicht und mit einem Plan, der in deinen Alltag als Mama passt.
                 </p>
                 <Link
                   href="/kontakt#schreib-mir"
@@ -172,7 +172,7 @@ export default function ProgramCards() {
             >
               <div className="text-center sm:text-left">
                 <p className="font-semibold text-charcoal text-sm mb-0.5">Empfohlene Supplements</p>
-                <p className="text-soft-gray text-xs">Welche Präparate ich selbst nehme und für meine Kundinnen empfehle – transparent erklärt.</p>
+                <p className="text-soft-gray text-xs">Welche Präparate ich selbst nehme und für meine Kundinnen empfehle, transparent erklärt.</p>
               </div>
               <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-sage-dark whitespace-nowrap group-hover:gap-2.5 transition-all flex-shrink-0">
                 Zur Übersicht <ArrowRight size={15} />

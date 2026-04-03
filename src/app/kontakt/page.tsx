@@ -119,7 +119,7 @@ export default function KontaktPage() {
               Direkt buchen
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-soft-gray mb-7">
-              Starte noch heute – für eine sichere, gesunde Schwangerschaft und ein Leben, in dem du
+              Starte noch heute, für eine sichere, gesunde Schwangerschaft und ein Leben, in dem du
               dich und dein Baby wirklich gut versorgt weißt.
             </motion.p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -127,7 +127,7 @@ export default function KontaktPage() {
                 <h3 className="font-serif text-xl font-semibold text-charcoal mb-2">
                   Sichere Schwangerschaft
                 </h3>
-                <p className="text-soft-gray text-sm mb-1">1.497 € – oder 3 Raten à 529 €</p>
+                <p className="text-soft-gray text-sm mb-1">1.497 € oder 3 Raten à 529 €</p>
                 <ul className="space-y-1.5 my-4">
                   {[
                     "Individuelle Nährstoffanalyse & Supplement-Strategie",
@@ -148,7 +148,7 @@ export default function KontaktPage() {
                 <h3 className="font-serif text-xl font-semibold text-charcoal mb-2">
                   Sicherer Beikoststart
                 </h3>
-                <p className="text-soft-gray text-sm mb-1">997 € – oder 2 Raten à 529 €</p>
+                <p className="text-soft-gray text-sm mb-1">997 € oder 2 Raten à 529 €</p>
                 <ul className="space-y-1.5 my-4">
                   {[
                     "Individueller Beikostplan abgestimmt auf dein Kind",
@@ -198,7 +198,7 @@ export default function KontaktPage() {
                 Schreib mir
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-soft-gray mb-6 text-sm">
-                Du hast eine allgemeine Frage, die kein Gespräch erfordert? Schreib mir gerne – ich
+                Du hast eine allgemeine Frage, die kein Gespräch erfordert? Schreib mir gerne, ich
                 melde mich innerhalb von 48 Stunden.
               </motion.p>
               <motion.div variants={fadeInUp}>

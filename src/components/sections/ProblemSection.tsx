@@ -8,7 +8,7 @@ const quotes = [
   `„Bekommt dein Baby denn genug Nährstoffe?"`,
   `„Vegan in der Schwangerschaft? Das ist doch verantwortungslos!"`,
   `„Woher bekommst du denn Eisen, B12, Omega-3?"`,
-  `„Und was ist mit der Beikost – geht das überhaupt vegan?"`,
+  `„Und die Beikost? Geht das überhaupt vegan?"`,
 ];
 
 export default function ProblemSection() {
@@ -37,7 +37,7 @@ export default function ProblemSection() {
           <motion.div variants={fadeInUp} className="text-center mb-12">
             <span className="font-script text-4xl text-taupe block mb-2">Kennst du das?</span>
             <p className="text-soft-gray max-w-xl mx-auto leading-relaxed">
-              Du liebst deine vegane Ernährung – für dich, für dein Baby, für die Welt.
+              Du liebst deine vegane Ernährung, für dich, für dein Baby, für die Welt.
               <br />
               Aber kaum bist du schwanger, hagelt es Zweifel von allen Seiten:
             </p>
@@ -64,7 +64,7 @@ export default function ProblemSection() {
 
           <motion.div variants={fadeInUp} className="max-w-2xl mx-auto text-center">
             <p className="text-soft-gray leading-relaxed mb-4">
-              Ich kenne diese Sätze. Ich habe sie selbst gehört – von der Familie, von
+              Ich kenne diese Sätze. Ich habe sie selbst gehört, von der Familie, von
               Freundinnen, manchmal sogar vom Arzt. Die Verunsicherung ist real. Und ich nehme
               sie ernst.
             </p>
