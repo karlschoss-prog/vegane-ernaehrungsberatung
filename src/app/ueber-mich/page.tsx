@@ -205,7 +205,7 @@ export default function UeberMichPage() {
       </section>
 
       {/* Mein Ansatz */}
-      <section className="section-padding bg-sage-light/20" ref={ansatzRef}>
+      <section className="section-padding bg-cream" ref={ansatzRef}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={staggerContainer}
