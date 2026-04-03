@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
-import { Clock, ArrowRight, Check } from "lucide-react";
+import { Clock, ArrowRight, Check, Timer } from "lucide-react";
 import Link from "next/link";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import { PROGRAMS } from "@/lib/constants";
@@ -110,6 +110,59 @@ export default function ProgramCards() {
               </Link>
             </motion.div>
           </div>
+
+          {/* Coming Soon Programs */}
+          <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto mt-6">
+            {/* Coming Soon 1: Sicher stillen */}
+            <div className="relative bg-white/60 rounded-card-lg p-7 border border-sage-light/50 overflow-hidden">
+              <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" aria-hidden="true" />
+              <div className="relative">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-sage-light/60 text-sage-dark text-xs font-semibold rounded-full">
+                    <Timer size={12} />
+                    Demnächst verfügbar
+                  </span>
+                </div>
+                <h3 className="font-serif text-2xl font-semibold text-charcoal/60 mb-3">
+                  Sicher stillen
+                </h3>
+                <p className="text-sm text-soft-gray/80 leading-relaxed mb-5">
+                  Vegane Ernährung in der Stillzeit – optimal versorgt trotz erhöhtem Kalorienbedarf, weniger Heißhunger und mehr Energie für dich und dein Baby.
+                </p>
+                <Link
+                  href="/kontakt#schreib-mir"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-sage-dark/70 hover:text-sage-dark hover:gap-3 transition-all"
+                >
+                  Auf Warteliste eintragen <ArrowRight size={16} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Coming Soon 2: Vegan & leicht */}
+            <div className="relative bg-white/60 rounded-card-lg p-7 border border-blush/30 overflow-hidden">
+              <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" aria-hidden="true" />
+              <div className="relative">
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blush/30 text-taupe text-xs font-semibold rounded-full">
+                    <Timer size={12} />
+                    Demnächst verfügbar
+                  </span>
+                </div>
+                <h3 className="font-serif text-2xl font-semibold text-charcoal/60 mb-3">
+                  Vegan & leicht
+                </h3>
+                <p className="text-sm text-soft-gray/80 leading-relaxed mb-5">
+                  Vegan abnehmen nach der Schwangerschaft – nachhaltig, ohne Verzicht und mit einem Plan, der in deinen Alltag als Mama passt.
+                </p>
+                <Link
+                  href="/kontakt#schreib-mir"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-taupe/70 hover:text-taupe hover:gap-3 transition-all"
+                >
+                  Auf Warteliste eintragen <ArrowRight size={16} />
+                </Link>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Supplements teaser */}
           <motion.div variants={fadeInUp} className="mt-10 max-w-4xl mx-auto">
