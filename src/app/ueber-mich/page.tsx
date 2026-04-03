@@ -175,7 +175,7 @@ export default function UeberMichPage() {
             <motion.p variants={fadeInUp} className="text-soft-gray leading-relaxed mb-8">
               Auf Instagram, TikTok und YouTube teile ich jede Woche neuen Content rund um vegane
               Ernährung, Schwangerschaft, Beikost und das Leben mit einem kleinen Kind. Praxisnah,
-              wissenschaftlich fundiert – und aus meinem eigenen Alltag. Folge mir gerne, wenn du
+              wissenschaftlich fundiert und aus meinem eigenen Alltag. Folge mir gerne, wenn du
               keine Beiträge verpassen möchtest.
             </motion.p>
             <motion.div variants={staggerContainer} className="grid grid-cols-1 sm:grid-cols-3 gap-4">
