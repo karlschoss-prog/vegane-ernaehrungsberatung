@@ -161,7 +161,7 @@ export default function UeberMichPage() {
       </section>
 
       {/* Social Media */}
-      <section className="section-padding bg-cream">
+      <section className="section-padding bg-sage-light/30">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={staggerContainer}
