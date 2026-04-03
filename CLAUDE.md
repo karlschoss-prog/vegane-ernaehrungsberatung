@@ -11,4 +11,7 @@ Nutze UI/UX Pro Max für Design-System-Generierung
 Nutze ggf. 21st.dev für Component-Inspiration (falls vorgegeben)
 Keine generischen AI-Aesthetics
 Bold, distinctive Design-Choices
-Performance-optimiert (Core Web Vitals)@AGENTS.md
+Performance-optimiert (Core Web Vitals)
+
+## Textstil
+Keine Gedankenstriche (–) oder Bindestriche (-) als Satzzeichen in Fließtexten auf der Website. Sätze stattdessen neu formulieren oder mit Komma trennen.
