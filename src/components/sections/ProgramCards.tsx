@@ -111,8 +111,24 @@ export default function ProgramCards() {
             </motion.div>
           </div>
 
+          {/* Supplements teaser */}
+          <motion.div variants={fadeInUp} className="mt-10 max-w-4xl mx-auto">
+            <Link
+              href="/supplements"
+              className="group flex flex-col sm:flex-row items-center justify-between gap-4 bg-white border border-sage-light rounded-card-lg px-6 py-5 shadow-sm hover:shadow-md hover:border-sage-dark transition-all"
+            >
+              <div className="text-center sm:text-left">
+                <p className="font-semibold text-charcoal text-sm mb-0.5">Empfohlene Supplements</p>
+                <p className="text-soft-gray text-xs">Welche Präparate ich selbst nehme und für meine Kundinnen empfehle – transparent erklärt.</p>
+              </div>
+              <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-sage-dark whitespace-nowrap group-hover:gap-2.5 transition-all flex-shrink-0">
+                Zur Übersicht <ArrowRight size={15} />
+              </span>
+            </Link>
+          </motion.div>
+
           {/* Individual request hint */}
-          <motion.div variants={fadeInUp} className="mt-10 text-center">
+          <motion.div variants={fadeInUp} className="mt-6 text-center">
             <p className="text-soft-gray text-sm">
               Fragen oder ein anderes Anliegen?{" "}
               <Link
