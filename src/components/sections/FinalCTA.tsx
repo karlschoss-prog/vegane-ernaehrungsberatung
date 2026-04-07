@@ -62,7 +62,7 @@ export default function FinalCTA() {
               external
               className="!bg-cream !text-sage-dark hover:!bg-blush hover:!text-charcoal font-bold shadow-xl"
             >
-              Jetzt Gespräch buchen
+              Kostenloses Erstgespräch buchen
             </Button>
           </motion.div>
         </motion.div>
