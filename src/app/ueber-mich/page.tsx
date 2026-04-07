@@ -228,7 +228,7 @@ export default function UeberMichPage() {
                 durchlebt hat.
               </p>
               <p>
-                Vegane Ernährung ist nicht mein Job, es ist mein Alltag. Ich lese Studien, tausche
+                Vegane Ernährung ist nicht mein Job. Es ist mein Alltag. Ich lese Studien, tausche
                 mich mit Experten aus, erstelle Content. Und ich erlebe täglich, wie viel Sicherheit
                 das richtige Wissen geben kann.
               </p>
