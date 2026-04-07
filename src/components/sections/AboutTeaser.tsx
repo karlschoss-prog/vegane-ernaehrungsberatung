@@ -51,9 +51,10 @@ export default function AboutTeaser() {
             </p>
             <p className="text-soft-gray leading-relaxed mb-6">
               Mein Weg zur veganen Ernährung begann mit einem Körper, der komplett übersäuert war,
-              und Ärzten, die keine Antwort hatten. Was ich dann gefunden habe, hat alles verändert.
-              Heute gebe ich dieses Wissen weiter: individuell, wissenschaftlich fundiert und mit dem
-              Verständnis einer Mutter, die denselben Weg gegangen ist.
+              und Ärzten, die keine Antwort hatten. Vegane Ernährung hat das verändert. Meine
+              Blutwerte, meine Energie, mein Leben. Heute gebe ich dieses Wissen weiter:
+              individuell, wissenschaftlich fundiert und mit dem Verständnis einer Mutter, die
+              denselben Weg gegangen ist.
             </p>
             <Link
               href="/ueber-mich"

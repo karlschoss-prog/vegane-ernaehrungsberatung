@@ -23,7 +23,7 @@ export default function ProgramCards() {
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
             <h2 className="font-serif text-3xl sm:text-4xl font-light text-charcoal mb-3">
-              Meine Programme
+              Deine Begleitung
             </h2>
             <p className="text-soft-gray max-w-lg mx-auto">
               Kein allgemeines Ernährungswissen aus dem Internet. Sondern ein Plan, der genau auf dich und dein Baby abgestimmt ist.
@@ -48,9 +48,9 @@ export default function ProgramCards() {
               </h3>
               <ul className="space-y-2 mb-5">
                 {[
-                  "Individuelle Nährstoffanalyse & Supplement-Strategie",
-                  "10–12 persönliche 1:1-Gespräche",
-                  "WhatsApp-Support werktags",
+                  "Du weißt genau, welche Supplements du wirklich brauchst",
+                  "Begleitung von Anfang bis Ende der Schwangerschaft",
+                  "Deine Fragen bleiben nicht lange unbeantwortet",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-soft-gray">
                     <Check size={14} className="text-sage-dark flex-shrink-0 mt-0.5" strokeWidth={2.5} />
@@ -88,8 +88,8 @@ export default function ProgramCards() {
               <ul className="space-y-2 mb-5">
                 {[
                   "Individueller Beikostplan abgestimmt auf dein Kind",
-                  "8–10 persönliche 1:1-Gespräche",
-                  "WhatsApp-Support werktags",
+                  "Begleitung vom ersten Löffel bis zur gemeinsamen Mahlzeit",
+                  "Deine Fragen bleiben nicht lange unbeantwortet",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-soft-gray">
                     <Check size={14} className="text-taupe flex-shrink-0 mt-0.5" strokeWidth={2.5} />
@@ -172,7 +172,7 @@ export default function ProgramCards() {
             >
               <div className="text-center sm:text-left">
                 <p className="font-semibold text-charcoal text-sm mb-0.5">Empfohlene Supplements</p>
-                <p className="text-soft-gray text-xs">Welche Präparate ich selbst nehme und für meine Kundinnen empfehle, transparent erklärt.</p>
+                <p className="text-soft-gray text-xs">Welche Präparate ich in der Schwangerschaft wirklich empfehle, und warum.</p>
               </div>
               <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-sage-dark whitespace-nowrap group-hover:gap-2.5 transition-all flex-shrink-0">
                 Zur Übersicht <ArrowRight size={15} />

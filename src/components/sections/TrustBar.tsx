@@ -24,7 +24,7 @@ const trustItems = [
   {
     icon: Users,
     title: "77.000+ Community",
-    sub: "Auf Social Media",
+    sub: "Instagram & TikTok",
   },
 ];
 

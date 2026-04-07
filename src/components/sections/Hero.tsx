@@ -85,13 +85,13 @@ export default function Hero() {
               variants={fadeInUp}
               className="text-lg text-soft-gray leading-relaxed mb-8 max-w-lg"
             >
-              Individuelle Ernährungsberatung für werdende und stillende Mütter,
-              die bei der veganen Ernährung nichts dem Zufall überlassen wollen.
+              Damit du weißt: Mein Baby bekommt alles, was es braucht.
+              Und ich mache nichts falsch.
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-3">
               <Button href={SITE.calendly} size="lg" external className="w-full sm:w-auto">
-                Kostenloses Kennenlerngespräch buchen
+                Kostenloses Erstgespräch buchen
               </Button>
               <Button href="/sichere-schwangerschaft" variant="ghost" size="lg" className="w-full sm:w-auto">
                 Programme entdecken

@@ -39,7 +39,7 @@ export default function Testimonials() {
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
             <h2 className="font-serif text-3xl sm:text-4xl font-light text-charcoal mb-3">
-              Das sagen meine Kundinnen
+              Echte Ergebnisse. Echte Worte.
             </h2>
           </motion.div>
 

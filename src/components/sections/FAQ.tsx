@@ -86,7 +86,7 @@ export default function FAQ() {
         >
           <motion.div variants={fadeInUp} className="text-center mb-10">
             <h2 className="font-serif text-3xl sm:text-4xl font-light text-charcoal mb-3">
-              Häufige Fragen
+              Deine Fragen. Ehrliche Antworten.
             </h2>
           </motion.div>
           <motion.div variants={fadeInUp} className="bg-white rounded-card-lg shadow-sm border border-sage-light/50 px-6 md:px-8 py-2">
