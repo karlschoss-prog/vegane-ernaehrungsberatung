@@ -111,7 +111,7 @@ export default function SichereSchwangerschaftPage() {
                 Kostenloses Erstgespräch buchen
               </Button>
               <Button href={STRIPE.schwangerschaft} variant="ghost" size="lg">
-                Direkt Programm buchen
+                Direkt buchen
               </Button>
             </motion.div>
           </motion.div>
@@ -290,7 +290,7 @@ export default function SichereSchwangerschaftPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-sage-dark hover:bg-cream"
               >
-                Kostenloses Erstgespräch
+                Kostenloses Erstgespräch buchen
               </a>
               <a
                 href={STRIPE.schwangerschaft}
