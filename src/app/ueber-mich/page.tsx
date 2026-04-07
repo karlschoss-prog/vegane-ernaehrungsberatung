@@ -152,9 +152,9 @@ export default function UeberMichPage() {
               ))}
             </div>
             <motion.p variants={fadeInUp} className="text-soft-gray leading-relaxed mt-8 max-w-2xl mx-auto text-center">
-              Als ich erfahren habe, dass ich schwanger bin, war für mich klar: Ich vertiefe mein
-              Wissen. Die Schwangerschaft ist die Phase, in der Ernährung am meisten zählt, und ich
-              wollte alles dafür tun, dass mein Baby optimal versorgt ist.
+              Als ich erfuhr, dass ich schwanger bin, vertiefte ich mein Wissen noch einmal. Denn
+              in der Schwangerschaft zählt Ernährung mehr als in jeder anderen Phase, und ich wollte
+              alles dafür tun, dass mein Baby optimal versorgt ist.
             </motion.p>
           </motion.div>
         </div>
@@ -250,9 +250,9 @@ export default function UeberMichPage() {
             <motion.div variants={fadeInUp} className="bg-white rounded-card-lg p-6 border border-sage-light shadow-sm mb-8">
               <h3 className="font-serif text-xl font-semibold text-charcoal mb-3">Mein Ansatz</h3>
               <p className="text-soft-gray leading-relaxed mb-3">
-                Ich glaube nicht an schnelle Tipps oder Pauschalpläne. Jede Frau, jeder Körper,
-                jede Schwangerschaft ist anders, deshalb arbeite ich nur 1:1 und mit wenigen
-                Kundinnen gleichzeitig.
+                Keine schnellen Tipps, keine Pauschalpläne. Jede Frau, jeder Körper, jede
+                Schwangerschaft ist anders, deshalb arbeite ich nur 1:1 und mit wenigen Kundinnen
+                gleichzeitig.
               </p>
               <p className="text-soft-gray leading-relaxed">
                 Meine Programme sind intensiv, weil echte Veränderung Zeit braucht. Wir erarbeiten
@@ -263,11 +263,11 @@ export default function UeberMichPage() {
 
             <motion.div variants={fadeInUp} className="text-center">
               <p className="text-charcoal mb-5">
-                Du möchtest mehr erfahren? Im kostenlosen Kennenlerngespräch schauen wir gemeinsam,
-                ob und wie ich dich begleiten kann.
+                Im kostenlosen Erstgespräch schauen wir gemeinsam, was für dich der richtige Weg
+                ist. Kein Druck, keine Verpflichtung.
               </p>
               <Button href={SITE.calendly} size="lg" external>
-                Kennenlerngespräch buchen
+                Kostenloses Erstgespräch buchen
               </Button>
             </motion.div>
           </motion.div>
