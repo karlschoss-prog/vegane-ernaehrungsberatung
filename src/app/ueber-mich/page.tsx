@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
 import { Award, BookOpen, Heart, ArrowRight } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { staggerContainer, fadeInUp, slideInFromLeft, slideInFromRight } from "@/lib/animations";
 import { SITE, AFFILIATE } from "@/lib/constants";
@@ -61,13 +60,11 @@ export default function UeberMichPage() {
                 className="relative w-80 h-96 rounded-card-lg overflow-hidden shadow-md"
                 style={{ boxShadow: "0 20px 60px rgba(91,122,94,0.15)" }}
               >
-                <Image
-                  src="/christin.jpg"
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/christin.jpg`}
                   alt="Christin Schoß – Zertifizierte vegane Ernährungsberaterin"
-                  fill
-                  className="object-cover object-top"
-                  sizes="320px"
-                  priority
+                  className="object-cover object-top w-full h-full"
                 />
               </div>
             </motion.div>

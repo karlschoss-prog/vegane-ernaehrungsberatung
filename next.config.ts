@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
   basePath: "/vegane-ernaehrungsberatung",
   trailingSlash: true,
   images: { unoptimized: true },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: "/vegane-ernaehrungsberatung",
+  },
 };
 
 export default nextConfig;
