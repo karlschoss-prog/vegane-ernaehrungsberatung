@@ -12,7 +12,7 @@ const products = [
     items: [
       {
         name: "Protein Shake",
-        desc: "Die meisten Menschen nehmen täglich zu wenig Eiweiß zu sich – auch in der Schwangerschaft und Stillzeit ist eine ausreichende Proteinzufuhr entscheidend. Der pflanzliche Protein Shake von Watson Nutrition ist eine einfache und leckere Möglichkeit, den täglichen Bedarf zu decken.",
+        desc: "Die meisten Menschen nehmen täglich zu wenig Eiweiß zu sich. Gerade in der Schwangerschaft und Stillzeit ist eine ausreichende Proteinzufuhr besonders wichtig. Der pflanzliche Protein Shake von Watson Nutrition ist eine einfache und leckere Möglichkeit, den täglichen Bedarf zu decken.",
         note: "Mein Lieblingsgeschmack ist Kaffee, absolut empfehlenswert!",
         link: "https://watsonnutrition.de/products/veganes-clear-protein?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Protein Shake *",
@@ -45,7 +45,7 @@ const products = [
       },
       {
         name: "Female One",
-        desc: "Ein hochwertiger Frauen-Multinährstoff, der gezielt auf die Bedürfnisse vor der Schwangerschaft ausgerichtet ist. Ergänzt das Pregnancy All In One und sorgt für eine optimale Ausgangslage in der Kinderwunschphase.",
+        desc: "Ein Frauen-Multinährstoff, der gezielt auf die Bedürfnisse vor der Schwangerschaft ausgerichtet ist. Ergänzt das Pregnancy All In One und sorgt für eine optimale Ausgangslage in der Kinderwunschphase.",
         note: null,
         link: "https://watsonnutrition.de/products/female-one?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Female One *",
@@ -165,7 +165,7 @@ const products = [
       },
       {
         name: "Kinder-Supplemente von Hopkins",
-        desc: "Hopkins Formulations bietet hochwertige Kinder-Supplemente, abgestimmt auf die jeweiligen Altersstufen. Ich empfehle die Produkte als ergänzende Versorgung neben dem Kids Complete.",
+        desc: "Hopkins Formulations bietet Kinder-Supplemente, abgestimmt auf die jeweiligen Altersstufen. Ich empfehle die Produkte als ergänzende Versorgung neben dem Kids Complete.",
         note: null,
         link: "https://hopkinsformulations.de/collections/alle-produkte?filter.p.m.custom.lebensphasen=Kinder",
         linkLabel: "Hopkins Formulations – Kinder-Supplements *",
@@ -311,15 +311,14 @@ export default function SupplementsPage() {
             viewport={{ once: true, margin: "-10%" }}
           >
             <motion.h2 variants={fadeInUp} className="font-serif text-3xl sm:text-4xl font-light mb-4">
-              Supplements sind ein wichtiger Baustein.
+              Supplements sind der erste Schritt.
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-white/70 mb-8">
-              In meinen Programmen begleite ich dich durch alles, was dich und dein Baby stärkt,
-              von der Ernährung über die Nährstoffe bis weit über die Schwangerschaft hinaus.
+              Du bekommst einen Fahrplan für jede Phase: die richtige Ernährung, die passenden Nährstoffe und alles, was dich und dein Baby wirklich stärkt.
             </motion.p>
             <motion.div variants={fadeInUp}>
               <a
-                href="/sichere-schwangerschaft"
+                href="/#programme"
                 className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-taupe hover:bg-cream shadow-sm"
               >
                 Programme entdecken
