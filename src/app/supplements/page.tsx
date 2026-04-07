@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion, useReducedMotion, AnimatePresence } from "framer-motion";
 import { ExternalLink, AlertCircle, Tag } from "lucide-react";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
@@ -317,12 +318,12 @@ export default function SupplementsPage() {
               Du bekommst einen Fahrplan für jede Phase: die richtige Ernährung, die passenden Nährstoffe und alles, was dich und dein Baby wirklich stärkt.
             </motion.p>
             <motion.div variants={fadeInUp}>
-              <a
+              <Link
                 href="/#programme"
                 className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-taupe hover:bg-cream shadow-sm"
               >
                 Programme entdecken
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
         </div>
