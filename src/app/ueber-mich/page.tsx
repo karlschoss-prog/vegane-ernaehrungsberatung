@@ -78,7 +78,7 @@ export default function UeberMichPage() {
                 Über mich
               </motion.p>
               <motion.h1 variants={fadeInUp} className="font-serif text-4xl sm:text-5xl font-light text-charcoal mb-5 leading-snug">
-                Ernährungsberaterin aus Leidenschaft. Mama aus vollem Herzen.
+                Ernährungsberaterin aus Leidenschaft.<br /> Mama aus vollem Herzen.
               </motion.h1>
               <motion.p variants={fadeInUp} className="text-soft-gray leading-relaxed">
                 Zertifizierte vegane Ernährungsberaterin, Mama einer kleinen Tochter und
