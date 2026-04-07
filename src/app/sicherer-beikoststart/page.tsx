@@ -30,7 +30,7 @@ const included = [
   {
     icon: Search,
     title: "Supplement-Check & Nährstofffokus",
-    desc: "Welche Supplements braucht dein Kind wirklich? Wir schauen genau hin, ohne Über- oder Unterversorgung.",
+    desc: "Welche Supplements braucht dein Kind wirklich? Genau die richtigen, in der richtigen Menge. Nicht mehr, nicht weniger.",
   },
   {
     icon: Utensils,
@@ -42,16 +42,16 @@ const included = [
 const forWhom = [
   "Du dein Kind vegan ernähren möchtest und einen sicheren, fundierten Plan brauchst",
   "Du unsicher bist, wann und wie du mit der Beikost starten sollst",
-  "Du sicherstellen willst, dass dein Baby alle Nährstoffe bekommt, die es für eine gesunde Entwicklung braucht",
+  "Du sicherstellen willst, dass dein Kind von Anfang an mit allem versorgt ist, was es wirklich braucht",
   "Du eine persönliche Begleitung suchst, nicht nur allgemeine Beikost-Tabellen",
-  "Du bereit bist, dich aktiv mit der Ernährung deines Kindes auseinanderzusetzen",
+  "Du bereit bist, aktiv mitzumachen, weil dir die Ernährung deines Kindes wirklich am Herzen liegt",
 ];
 
 const phases = [
   {
     weeks: "Woche 1–2",
     title: "Analyse & Planung",
-    desc: "Wir schauen uns die aktuelle Situation genau an und erstellen deinen individuellen Beikostplan.",
+    desc: "Was isst dein Kind bisher? Was fehlt noch? Aus dem genauen Blick auf den Ist-Stand entsteht dein individueller Beikostplan.",
   },
   {
     weeks: "Woche 3–7",
@@ -110,7 +110,7 @@ export default function SichererBeikostPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-blush-dark text-white hover:bg-blush-dark/90 shadow-sm"
               >
-                Kostenloses Kennenlerngespräch buchen
+                Kostenloses Erstgespräch buchen
               </a>
               <a
                 href={STRIPE.beikost}
@@ -118,7 +118,7 @@ export default function SichererBeikostPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg border-2 border-blush-dark text-blush-dark hover:bg-blush-dark/10"
               >
-                Direkt Programm buchen
+                Direkt buchen
               </a>
             </motion.div>
           </motion.div>
@@ -135,7 +135,7 @@ export default function SichererBeikostPage() {
             viewport={{ once: true, margin: "-10%" }}
           >
             <motion.h2 variants={fadeInUp} className="font-serif text-3xl sm:text-4xl font-light text-charcoal mb-4">
-              Für wen ist dieses Programm?
+              Passt das zu dir?
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-soft-gray mb-6">Dieses Programm ist für dich, wenn:</motion.p>
             <motion.ul variants={staggerContainer} className="space-y-3 mb-8">
@@ -296,7 +296,7 @@ export default function SichererBeikostPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-blush-dark hover:bg-cream"
               >
-                Kostenloses Kennenlerngespräch
+                Kostenloses Erstgespräch buchen
               </a>
               <a
                 href={STRIPE.beikost}
