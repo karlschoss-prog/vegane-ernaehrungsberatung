@@ -9,7 +9,6 @@ import { fadeInUp, staggerContainer, slideInFromRight } from "@/lib/animations";
 export default function Hero() {
   const shouldReduceMotion = useReducedMotion();
   const ref = useRef(null);
-  const animate = shouldReduceMotion ? "visible" : undefined;
 
   return (
     <section className="relative overflow-hidden bg-cream min-h-[92vh] flex items-center">
@@ -93,7 +92,7 @@ export default function Hero() {
               <Button href={SITE.calendly} size="lg" external className="w-full sm:w-auto">
                 Kostenloses Erstgespräch buchen
               </Button>
-              <Button href="/sichere-schwangerschaft" variant="ghost" size="lg" className="w-full sm:w-auto">
+              <Button href="/#programme" variant="ghost" size="lg" className="w-full sm:w-auto">
                 Programme entdecken
               </Button>
             </motion.div>

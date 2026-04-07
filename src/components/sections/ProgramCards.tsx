@@ -13,7 +13,7 @@ export default function ProgramCards() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section className="section-padding bg-sage-light/40">
+    <section id="programme" className="section-padding bg-sage-light/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
