@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { Calendar, Check } from "lucide-react";
+import { Calendar, Check, Timer } from "lucide-react";
 
 function InstagramIcon({ size = 18 }: { size?: number }) {
   return (
@@ -38,6 +38,7 @@ function YouTubeIcon({ size = 18 }: { size?: number }) {
     </svg>
   );
 }
+import Link from "next/link";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import { SITE, STRIPE } from "@/lib/constants";
 import Button from "@/components/ui/Button";
@@ -165,6 +166,49 @@ export default function KontaktPage() {
                 </Button>
               </motion.div>
             </div>
+
+            {/* Coming Soon */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5">
+              <div className="relative bg-white/60 rounded-card-lg p-6 border border-sage-light/50 overflow-hidden">
+                <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" aria-hidden="true" />
+                <div className="relative">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-sage-light/60 text-sage-dark text-xs font-semibold rounded-full mb-3">
+                    <Timer size={11} />
+                    Demnächst verfügbar
+                  </span>
+                  <h3 className="font-serif text-xl font-semibold text-charcoal/60 mb-2">Sicher stillen</h3>
+                  <p className="text-xs text-soft-gray/80 leading-relaxed mb-4">
+                    Vegane Ernährung in der Stillzeit: optimal versorgt trotz erhöhtem Kalorienbedarf, weniger Heißhunger und mehr Energie.
+                  </p>
+                  <Link
+                    href="#schreib-mir"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-sage-dark/70 hover:text-sage-dark transition-colors"
+                  >
+                    Auf Warteliste eintragen
+                  </Link>
+                </div>
+              </div>
+              <div className="relative bg-white/60 rounded-card-lg p-6 border border-blush/30 overflow-hidden">
+                <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" aria-hidden="true" />
+                <div className="relative">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blush/30 text-taupe text-xs font-semibold rounded-full mb-3">
+                    <Timer size={11} />
+                    Demnächst verfügbar
+                  </span>
+                  <h3 className="font-serif text-xl font-semibold text-charcoal/60 mb-2">Vegan & leicht</h3>
+                  <p className="text-xs text-soft-gray/80 leading-relaxed mb-4">
+                    Vegan abnehmen nach der Schwangerschaft, nachhaltig, ohne Verzicht und mit einem Plan, der in deinen Alltag als Mama passt.
+                  </p>
+                  <Link
+                    href="#schreib-mir"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-taupe/70 hover:text-taupe transition-colors"
+                  >
+                    Auf Warteliste eintragen
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             <motion.div
               variants={fadeInUp}
               initial={shouldReduceMotion ? "visible" : "hidden"}
@@ -197,7 +241,7 @@ export default function KontaktPage() {
                 Schreib mir
               </motion.h2>
               <motion.p variants={fadeInUp} className="text-soft-gray mb-6 text-sm">
-                Du hast eine allgemeine Frage, die kein Gespräch erfordert? Schreib mir gerne, ich
+                Du hast eine allgemeine Frage, die kein Gespräch erfordert? Schreib mir gerne. Ich
                 melde mich innerhalb von 48 Stunden.
               </motion.p>
               <motion.div variants={fadeInUp}>
