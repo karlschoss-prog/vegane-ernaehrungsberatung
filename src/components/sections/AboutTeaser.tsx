@@ -45,14 +45,15 @@ export default function AboutTeaser() {
               Hi, ich bin Christin
             </h2>
             <p className="text-soft-gray leading-relaxed mb-4">
-              Zertifizierte vegane Ernährungsberaterin, Mama einer kleinen Tochter und
-              leidenschaftlich dafür, dass du deine Schwangerschaft und die Zeit danach vegan und sicher erleben kannst.
+              Zertifizierte vegane Ernährungsberaterin und Mama einer kleinen Tochter. Ich weiß aus
+              eigener Erfahrung, wie es sich anfühlt, schwanger und vegan zu sein und trotzdem auf
+              der sicheren Seite sein zu wollen.
             </p>
             <p className="text-soft-gray leading-relaxed mb-6">
-              Ich bin zur veganen Ernährung gekommen, weil mein Körper komplett übersäuert war und
-              mir niemand helfen konnte. Was ich gefunden habe, hat alles verändert. Heute gebe ich
-              dieses Wissen weiter: fundiert, individuell und mit dem Verständnis einer Mutter, die
-              den Weg selbst gegangen ist.
+              Mein Weg zur veganen Ernährung begann mit einem Körper, der komplett übersäuert war,
+              und Ärzten, die keine Antwort hatten. Was ich dann gefunden habe, hat alles verändert.
+              Heute gebe ich dieses Wissen weiter: individuell, wissenschaftlich fundiert und mit dem
+              Verständnis einer Mutter, die denselben Weg gegangen ist.
             </p>
             <Link
               href="/ueber-mich"

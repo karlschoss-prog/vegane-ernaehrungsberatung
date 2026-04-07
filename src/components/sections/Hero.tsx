@@ -77,7 +77,7 @@ export default function Hero() {
                 <span className="font-light">Vegan </span><span className="font-semibold text-sage-dark">schwanger.</span>
               </span>
               <span className="block text-2xl sm:text-3xl lg:text-4xl font-light italic text-taupe mt-3 leading-snug">
-                Sicher begleitet, durch Schwangerschaft & Beikoststart.
+                Sicher begleitet durch Schwangerschaft & Beikoststart.
               </span>
             </motion.h1>
 

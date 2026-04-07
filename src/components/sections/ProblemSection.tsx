@@ -69,9 +69,9 @@ export default function ProblemSection() {
               sie ernst.
             </p>
             <p className="font-semibold text-charcoal leading-relaxed mb-3">
-              Vegane Ernährung in der Schwangerschaft ist nicht nur möglich, sondern gut.
+              Vegane Ernährung in der Schwangerschaft ist nicht nur möglich. Sie ist gut.
               <br />
-              Gut geplant versorgt sie dich und dein Kind mit allem, was ihr braucht.
+              Richtig geplant versorgt sie dich und dein Baby mit allem, was ihr wirklich braucht.
             </p>
             <p className="font-script text-2xl text-sage-dark">
               Und genau diese Sicherheit gebe ich dir. ✦

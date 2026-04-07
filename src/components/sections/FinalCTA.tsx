@@ -51,7 +51,7 @@ export default function FinalCTA() {
             <em className="font-semibold not-italic" style={{ color: "#C2D8C4" }}>vegan und sicher</em> zu erleben?
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-lg mb-10 max-w-xl mx-auto" style={{ color: "rgba(250,243,227,0.65)" }}>
-            Lass uns herausfinden, ob wir zusammenpassen und wie ich dich am besten unterstützen kann.
+            Erzähl mir von deiner Situation. Ich zeige dir, welcher Plan zu dir passt.
             <br />
             20 Minuten, kostenlos, unverbindlich.
           </motion.p>

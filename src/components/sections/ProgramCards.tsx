@@ -26,7 +26,7 @@ export default function ProgramCards() {
               Meine Programme
             </h2>
             <p className="text-soft-gray max-w-lg mx-auto">
-              Ich begleite dich persönlich. Mit Fachwissen, echter Erfahrung und einem klaren Plan.
+              Kein allgemeines Ernährungswissen aus dem Internet. Sondern ein Plan, der genau auf dich und dein Baby abgestimmt ist.
             </p>
           </motion.div>
 
