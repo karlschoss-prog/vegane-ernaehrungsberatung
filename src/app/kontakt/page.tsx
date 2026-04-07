@@ -69,7 +69,7 @@ export default function KontaktPage() {
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-soft-gray text-lg max-w-xl mx-auto">
               Du hast Fragen, möchtest mehr über meine Programme erfahren oder bist bereit zu
-              starten? Ich freue mich, von dir zu hören.
+              starten? Hier findest du alle Wege zu mir.
             </motion.p>
           </motion.div>
         </div>
@@ -89,17 +89,16 @@ export default function KontaktPage() {
                 <Calendar size={18} className="text-sage-dark" strokeWidth={1.5} />
               </div>
               <h2 className="font-serif text-2xl sm:text-3xl font-light text-charcoal">
-                Kostenloses Kennenlerngespräch
+                Kostenloses Erstgespräch
               </h2>
             </motion.div>
             <motion.p variants={fadeInUp} className="text-soft-gray mb-6 max-w-2xl">
-              In unserem kostenlosen 20-minütigen Kennenlerngespräch erzählst du mir, wo du gerade
-              stehst und wir schauen gemeinsam, wie ich dich am besten begleiten kann. Persönlich,
-              unverbindlich und ganz ohne Druck.
+              In 20 Minuten erzählst du mir, wo du gerade stehst, und wir schauen gemeinsam, wie
+              ich dich am besten begleiten kann. Persönlich, unverbindlich und ganz ohne Druck.
             </motion.p>
             <motion.div variants={fadeInUp}>
               <Button href={SITE.calendly} size="lg" external>
-                Jetzt Termin vereinbaren
+                Kostenloses Erstgespräch buchen
               </Button>
             </motion.div>
           </motion.div>
@@ -119,8 +118,8 @@ export default function KontaktPage() {
               Direkt buchen
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-soft-gray mb-7">
-              Starte noch heute, für eine sichere, gesunde Schwangerschaft und ein Leben, in dem du
-              dich und dein Baby wirklich gut versorgt weißt.
+              Starte noch heute. Für eine sichere Schwangerschaft und ein Leben, in dem du dich und
+              dein Baby wirklich gut versorgt weißt.
             </motion.p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <motion.div variants={fadeInUp} className="bg-white rounded-card-lg p-6 border border-sage-light shadow-sm hover:shadow-xl hover:border-sage-dark hover:-translate-y-1 transition-all duration-200 cursor-pointer">
