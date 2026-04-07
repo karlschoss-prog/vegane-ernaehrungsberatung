@@ -11,7 +11,7 @@ const included = [
   {
     icon: FileText,
     title: "Intensives Analysegespräch (60–90 Minuten)",
-    desc: "Wir schauen uns deine aktuelle Ernährung, deine Blutwerte, deine Lebensumstände und deine Ziele genau an. Das ist die Basis für alles, was folgt.",
+    desc: "Deine aktuelle Ernährung, deine Blutwerte, dein Alltag. Aus diesem Bild entsteht dein persönlicher Plan.",
   },
   {
     icon: Check,
@@ -44,7 +44,7 @@ const forWhom = [
   "Du dich vegan ernährst und sicherstellen willst, dass dein Baby während der Schwangerschaft optimal versorgt ist",
   "Du keine Lust auf allgemeine Tipps hast, sondern eine individuelle Strategie willst, die zu dir passt",
   "Du bereit bist, aktiv mitzuarbeiten, weil dir die Gesundheit deines Kindes am Herzen liegt",
-  "Du eine persönliche Begleitung suchst, die über einzelne Fragen hinausgeht",
+  "Du jemanden suchst, der wirklich mitdenkt und nicht nur einzelne Fragen beantwortet",
   "Du im Kinderwunsch oder bereits schwanger bist",
 ];
 
@@ -108,7 +108,7 @@ export default function SichereSchwangerschaftPage() {
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button href={SITE.calendly} size="lg" external>
-                Kostenloses Kennenlerngespräch buchen
+                Kostenloses Erstgespräch buchen
               </Button>
               <Button href={STRIPE.schwangerschaft} variant="ghost" size="lg">
                 Direkt Programm buchen
@@ -128,7 +128,7 @@ export default function SichereSchwangerschaftPage() {
             animate={isInView ? "visible" : "hidden"}
           >
             <motion.h2 variants={fadeInUp} className="font-serif text-3xl sm:text-4xl font-light text-charcoal mb-4">
-              Für wen ist dieses Programm?
+              Passt das zu dir?
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-soft-gray mb-6">Dieses Programm ist für dich, wenn:</motion.p>
             <motion.ul variants={staggerContainer} className="space-y-3 mb-8">
@@ -144,8 +144,8 @@ export default function SichereSchwangerschaftPage() {
             <motion.div variants={fadeInUp} className="bg-blush/20 border border-blush/40 rounded-card p-4">
               <p className="text-sm text-charcoal">
                 <strong>Dieses Programm passt nicht zu dir, wenn</strong> du dir eine schnelle
-                Lösung erhoffst. Echte Ergebnisse entstehen durch Zusammenarbeit — ich begleite
-                dich dabei, den Weg gehst du selbst.
+                Lösung erhoffst. Echte Ergebnisse brauchen Zeit und Mitarbeit. Ich begleite dich,
+                aber den Weg gehst du selbst.
               </p>
             </motion.div>
           </motion.div>
@@ -290,7 +290,7 @@ export default function SichereSchwangerschaftPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-sage-dark hover:bg-cream"
               >
-                Kostenloses Kennenlerngespräch
+                Kostenloses Erstgespräch
               </a>
               <a
                 href={STRIPE.schwangerschaft}
