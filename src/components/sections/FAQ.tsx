@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "Ich bin erst im Kinderwunsch. Ist es zu früh für eine Beratung?",
-    a: "Nein, im Gegenteil. Die Kinderwunschphase ist der ideale Zeitpunkt. Dein Körper bereitet sich auf die Schwangerschaft vor und eine optimale Nährstoffversorgung kann dabei einen großen Unterschied machen. Sprich mich einfach im Kennenlerngespräch darauf an.",
+    a: "Nein, im Gegenteil. Die Kinderwunschphase ist der ideale Zeitpunkt. Dein Körper bereitet sich auf die Schwangerschaft vor und eine optimale Nährstoffversorgung kann dabei einen großen Unterschied machen. Sprich mich einfach im Erstgespräch darauf an.",
   },
   {
     q: "Was unterscheidet deine Beratung von kostenlosen Informationen im Internet?",
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "Was, wenn ich mir die Beratung gerade nicht leisten kann?",
-    a: "Ich biete eine bequeme Ratenzahlung an, damit du die Investition auf mehrere Monate verteilen kannst. Im Kennenlerngespräch finden wir gemeinsam die beste Lösung für dich.",
+    a: "Ich biete eine bequeme Ratenzahlung an, damit du die Investition auf mehrere Monate verteilen kannst. Im Erstgespräch finden wir gemeinsam die beste Lösung für dich.",
   },
   {
     q: "Bietest du auch Einzelstunden an?",
