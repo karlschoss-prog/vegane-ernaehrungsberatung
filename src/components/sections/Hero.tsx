@@ -73,11 +73,8 @@ export default function Hero() {
               variants={fadeInUp}
               className="font-serif text-charcoal leading-none mb-6"
             >
-              <span className="block text-5xl sm:text-7xl lg:text-8xl font-light tracking-tight">
-                Vegan
-              </span>
-              <span className="block text-5xl sm:text-7xl lg:text-8xl font-semibold text-sage-dark tracking-tight">
-                schwanger.
+              <span className="block text-5xl sm:text-7xl lg:text-8xl tracking-tight whitespace-nowrap">
+                <span className="font-light">Vegan </span><span className="font-semibold text-sage-dark">schwanger.</span>
               </span>
               <span className="block text-2xl sm:text-3xl lg:text-4xl font-light italic text-taupe mt-3 leading-snug">
                 Sicher begleitet, durch Schwangerschaft & Beikoststart.
