@@ -12,135 +12,235 @@ export default function DatenschutzPage() {
         <h1 className="font-serif text-4xl font-light text-charcoal mb-10">Datenschutzerklärung</h1>
 
         <div className="space-y-8 text-soft-gray leading-relaxed">
+
+          {/* 1. Verantwortliche */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">1. Verantwortliche</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">1. Verantwortliche Person</h2>
             <p>
               Christin Schoß<br />
-              [Adresse wird nachgereicht]<br />
+              Hagenring 89<br />
+              38106 Braunschweig<br />
+              Deutschland<br />
               E-Mail: hallo@christinschoss.de
             </p>
           </div>
 
+          {/* 2. Hosting */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">2. Erhebung und Verarbeitung personenbezogener Daten</h2>
-            <p className="mb-3">
-              Personenbezogene Daten werden nur im Rahmen der technischen Notwendigkeit erhoben.
-              Beim Aufruf dieser Website werden automatisch Informationen in Server-Logfiles
-              gespeichert:
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">2. Hosting</h2>
+            <p>
+              Diese Website wird über <strong>GitHub Pages</strong> gehostet (GitHub Inc., 88 Colin P. Kelly Jr. Street,
+              San Francisco, CA 94107, USA). Beim Aufruf der Website werden automatisch technische Zugriffsdaten
+              in Server-Logfiles gespeichert, insbesondere:
             </p>
-            <ul className="list-disc pl-5 space-y-1">
+            <ul className="list-disc pl-5 space-y-1 mt-2">
+              <li>IP-Adresse des anfragenden Geräts</li>
               <li>Browsertyp und -version</li>
               <li>Verwendetes Betriebssystem</li>
               <li>Referrer-URL</li>
-              <li>Uhrzeit der Serveranfrage</li>
-              <li>IP-Adresse (anonymisiert)</li>
+              <li>Datum und Uhrzeit der Serveranfrage</li>
             </ul>
             <p className="mt-3">
-              Diese Daten werden nicht mit anderen Datenquellen zusammengeführt. Rechtsgrundlage
-              ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der technischen
-              Bereitstellung der Website).
+              Diese Daten werden von GitHub erhoben und vorübergehend gespeichert. Ich habe keinen Zugriff
+              auf diese Logfiles. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
+              (berechtigtes Interesse an der technischen Bereitstellung und Sicherheit der Website).
+              Es kann dabei zu einer Übermittlung von Daten in die USA kommen. GitHub Inc. ist unter dem
+              EU-US Data Privacy Framework (DPF) zertifiziert, sodass ein angemessenes Datenschutzniveau
+              gewährleistet ist. Weitere Informationen:{" "}
+              <a
+                href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
+              >
+                GitHub Privacy Statement
+              </a>
+              .
             </p>
           </div>
 
+          {/* 3. Cookies */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">3. Kontaktformular</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">3. Cookies</h2>
             <p>
-              Wenn du das Kontaktformular verwendest, werden die von dir angegebenen Daten (Name,
+              Diese Website verwendet ausschließlich technisch notwendige Cookies und den lokalen
+              Browserspeicher (localStorage), um deine Cookie-Einstellungen zu speichern. Es werden
+              derzeit keine Analyse- oder Marketing-Cookies eingesetzt. Eine Einwilligung ist für
+              technisch notwendige Cookies nicht erforderlich. Rechtsgrundlage ist Art. 6 Abs. 1
+              lit. f DSGVO (berechtigtes Interesse am fehlerfreien Betrieb der Website).
+            </p>
+          </div>
+
+          {/* 4. Kontaktformular */}
+          <div>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">4. Kontaktformular</h2>
+            <p>
+              Wenn du das Kontaktformular verwendest, werden die von dir eingegebenen Daten (Name,
               E-Mail-Adresse, Nachricht) zur Bearbeitung deiner Anfrage verarbeitet. Rechtsgrundlage
-              ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung). Die Daten werden nicht an Dritte
-              weitergegeben und nach Erledigung deiner Anfrage gelöscht, sofern keine gesetzlichen
-              Aufbewahrungspflichten bestehen.
+              ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) sowie deine ausdrückliche Einwilligung
+              gemäß Art. 6 Abs. 1 lit. a DSGVO. Die Daten werden nach Erledigung deiner Anfrage gelöscht,
+              sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
             </p>
             <p className="mt-2">
-              Das Kontaktformular wird über den Dienst Formspree (Formspree Inc., USA) übermittelt.
-              Informationen zum Datenschutz: formspree.io/legal/privacy-policy
+              Das Formular wird über den Dienst <strong>Formspree</strong> (Formspree Inc., 19 Morris Ave,
+              Brooklyn, NY 11211, USA) übermittelt. Formspree Inc. ist unter dem EU-US Data Privacy
+              Framework (DPF) zertifiziert. Weitere Informationen:{" "}
+              <a
+                href="https://formspree.io/legal/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
+              >
+                Formspree Datenschutzerklärung
+              </a>
+              .
             </p>
           </div>
 
+          {/* 5. Calendly */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">4. Calendly</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">5. Terminbuchung (Calendly)</h2>
             <p>
-              Für die Terminbuchung wird der Dienst Calendly (Calendly LLC, USA) eingebunden. Wenn
-              du einen Termin buchst, gelten die Datenschutzbestimmungen von Calendly. Weitere
-              Informationen: calendly.com/privacy
+              Für die Buchung von Terminen wird der Dienst <strong>Calendly</strong> (Calendly LLC,
+              271 17th St NW, Suite 1000, Atlanta, GA 30363, USA) eingesetzt. Wenn du einen Termin
+              buchst, werden die von dir eingegebenen Daten (Name, E-Mail-Adresse, ggf. weitere Angaben)
+              an Calendly übermittelt und dort verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
+              (Vertragsanbahnung). Calendly LLC ist unter dem EU-US Data Privacy Framework (DPF)
+              zertifiziert. Weitere Informationen:{" "}
+              <a
+                href="https://calendly.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
+              >
+                Calendly Datenschutzerklärung
+              </a>
+              .
             </p>
           </div>
 
+          {/* 6. Stripe */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">5. Zahlungsabwicklung (Stripe)</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">6. Zahlungsabwicklung (Stripe)</h2>
             <p>
-              Zahlungen werden über Stripe (Stripe Payments Europe Ltd.) abgewickelt. Dabei werden
-              die zur Zahlungsabwicklung erforderlichen Daten an Stripe übertragen. Weitere
-              Informationen: stripe.com/de/privacy
+              Zahlungen werden über <strong>Stripe</strong> (Stripe Payments Europe Ltd., 1 Grand Canal Street
+              Lower, Grand Canal Dock, Dublin, D02 H210, Irland) abgewickelt. Die zur Zahlungsabwicklung
+              erforderlichen Daten werden direkt an Stripe übertragen und dort verarbeitet. Ich erhalte
+              und speichere keine vollständigen Zahlungsdaten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b
+              DSGVO (Vertragserfüllung). Weitere Informationen:{" "}
+              <a
+                href="https://stripe.com/de/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
+              >
+                Stripe Datenschutzerklärung
+              </a>
+              .
             </p>
           </div>
 
+          {/* 7. WhatsApp */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">6. Cookies</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">7. Kontaktaufnahme per WhatsApp</h2>
             <p>
-              Diese Website verwendet technisch notwendige Cookies, die für den Betrieb der Seite
-              erforderlich sind. Optionale Cookies (Analytics, Marketing) werden nur nach deiner
-              ausdrücklichen Einwilligung gesetzt. Du kannst deine Einwilligung jederzeit
-              widerrufen, indem du den Browser-Speicher (localStorage) löschst.
+              Du hast die Möglichkeit, mich über WhatsApp zu kontaktieren. WhatsApp wird betrieben von
+              Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.
+              Wenn du mir eine Nachricht über WhatsApp sendest, werden deine Telefonnummer sowie der
+              Inhalt deiner Nachricht von Meta verarbeitet. Dabei kann es zu einer Datenübermittlung
+              in die USA kommen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung
+              bzw. Beantwortung deiner Anfrage). Die Nutzung von WhatsApp erfolgt freiwillig. Als
+              Alternative steht dir das Kontaktformular auf dieser Website zur Verfügung. Weitere
+              Informationen:{" "}
+              <a
+                href="https://www.whatsapp.com/legal/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
+              >
+                WhatsApp Datenschutzerklärung
+              </a>
+              .
             </p>
           </div>
 
+          {/* 8. Affiliate-Links */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">7. Affiliate-Links</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">8. Affiliate-Links</h2>
             <p>
-              Diese Website enthält Affiliate-Links zu Drittanbietern (Watson Nutrition). Beim
-              Klick auf diese Links können technische Daten (IP-Adresse, Referrer) an den
-              Drittanbieter übertragen werden. Dies geschieht auf Basis deiner Einwilligung
-              gemäß Art. 6 Abs. 1 lit. a DSGVO.
+              Diese Website enthält Affiliate-Links zu Drittanbietern (Watson Nutrition, Hopkins
+              Formulations, Ringana), gekennzeichnet mit *. Wenn du auf einen solchen Link klickst,
+              wirst du auf die Website des Drittanbieters weitergeleitet. Dabei können technische
+              Daten (z.B. IP-Adresse, Referrer) an den jeweiligen Anbieter übertragen werden. Diese
+              Übermittlung erfolgt auf Basis von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse
+              an der Partnerschaftsvermittlung). Ich erhalte bei einem Kauf eine Provision, ohne dass
+              für dich zusätzliche Kosten entstehen. Auf die Datenverarbeitung durch die
+              Drittanbieter habe ich keinen Einfluss.
             </p>
           </div>
 
+          {/* 9. Externe Social-Media-Links */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">8. Deine Rechte</h2>
-            <p className="mb-3">Du hast folgende Rechte bezüglich deiner personenbezogenen Daten:</p>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">9. Externe Links (Social Media)</h2>
+            <p>
+              Diese Website enthält einfache Links zu Instagram (Meta Platforms Ireland Ltd.) und
+              TikTok (TikTok Technology Ltd., Irland). Es handelt sich um reine Hyperlinks ohne
+              eingebettete Plugins oder Tracking-Pixel. Eine Datenübertragung an die Plattformen
+              findet erst statt, wenn du aktiv auf einen Link klickst. Auf die dortige
+              Datenverarbeitung habe ich keinen Einfluss. Es gelten die jeweiligen
+              Datenschutzbestimmungen der Plattformen.
+            </p>
+          </div>
+
+          {/* 10. Betroffenenrechte */}
+          <div>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">10. Deine Rechte</h2>
+            <p className="mb-3">
+              Dir stehen gegenüber mir als Verantwortlicher folgende Rechte zu:
+            </p>
             <ul className="list-disc pl-5 space-y-1">
-              <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
-              <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
-              <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+              <li>Recht auf Auskunft über gespeicherte Daten (Art. 15 DSGVO)</li>
+              <li>Recht auf Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+              <li>Recht auf Löschung ("Recht auf Vergessenwerden", Art. 17 DSGVO)</li>
               <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
               <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
-              <li>Widerspruchsrecht (Art. 21 DSGVO)</li>
+              <li>Widerspruchsrecht gegen die Verarbeitung (Art. 21 DSGVO)</li>
+              <li>Recht auf Widerruf einer erteilten Einwilligung (Art. 7 Abs. 3 DSGVO)</li>
             </ul>
             <p className="mt-3">
-              Du hast außerdem das Recht, bei der zuständigen Datenschutzaufsichtsbehörde Beschwerde
-              einzureichen.
-            </p>
-            <p className="mt-3">
-              Für Anfragen zu deinen Rechten wende dich an: hallo@christinschoss.de
+              Zur Geltendmachung deiner Rechte wende dich bitte an: hallo@christinschoss.de
             </p>
           </div>
 
+          {/* 11. Beschwerderecht */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">9. WhatsApp</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">11. Beschwerderecht bei der Aufsichtsbehörde</h2>
             <p>
-              Du hast die Möglichkeit, mich über WhatsApp zu kontaktieren. WhatsApp wird betrieben
-              von Meta Platforms Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2,
-              Irland. Wenn du eine Nachricht über WhatsApp sendest, werden deine Telefonnummer sowie
-              der Inhalt deiner Nachricht von Meta verarbeitet. Es kann dabei zu einer Übermittlung
-              von Daten in die USA kommen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
-              (Vertragsanbahnung bzw. Beantwortung deiner Anfrage). Die Nutzung von WhatsApp erfolgt
-              freiwillig; alternativ steht dir das Kontaktformular auf dieser Website zur Verfügung.
-              Weitere Informationen zum Datenschutz bei Meta: whatsapp.com/legal/privacy-policy
+              Du hast das Recht, dich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.
+              Zuständig ist der Landesbeauftragte für den Datenschutz Niedersachsen:
             </p>
-          </div>
-
-          <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">10. Externe Links</h2>
-            <p>
-              Diese Website enthält Links zu Instagram und TikTok. Wenn du diese Links aufrufst,
-              gelten die jeweiligen Datenschutzbestimmungen der Plattformen. Wir haben keinen
-              Einfluss auf die Datenverarbeitung dieser Drittanbieter.
+            <p className="mt-2">
+              Der Landesbeauftragte für den Datenschutz Niedersachsen<br />
+              Prinzenstraße 5<br />
+              30159 Hannover<br />
+              Telefon: +49 511 120-4500<br />
+              E-Mail: poststelle@lfd.niedersachsen.de<br />
+              Website:{" "}
+              <a
+                href="https://www.lfd.niedersachsen.de"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
+              >
+                www.lfd.niedersachsen.de
+              </a>
             </p>
           </div>
 
           <div className="pt-4 border-t border-sage-light">
-            <p className="text-xs">Stand: März 2026</p>
+            <p className="text-xs">Stand: April 2026</p>
           </div>
+
         </div>
       </div>
     </section>
