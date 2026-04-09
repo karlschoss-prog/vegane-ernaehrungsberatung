@@ -2,10 +2,15 @@
 
 import { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
-import { Heart, Baby, Users } from "lucide-react";
+import { Award, Heart, Baby, Users } from "lucide-react";
 import { fadeInUp } from "@/lib/animations";
 
 const trustItems = [
+  {
+    icon: Award,
+    title: "Zertifizierte Ernährungsberaterin",
+    sub: "ecodemy · staatlich geprüft · DQR-Niveau 5",
+  },
   {
     icon: Heart,
     title: "Schwangerschaft & Stillzeit",
@@ -42,20 +47,8 @@ export default function TrustBar() {
           variants={fadeInUp}
           initial={shouldReduceMotion ? "visible" : "hidden"}
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center"
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8"
         >
-          {/* ecodemy Siegel */}
-          <div className="flex flex-col items-center text-center">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/ecodemy-siegel-ausbildung-vegane-ernaehrungsberaterin-vea-150px-2x.png`}
-              alt="ecodemy Siegel – Geprüfte & zertifizierte vegane Ernährungsberaterin"
-              width={100}
-              height={80}
-              className="rounded-md"
-            />
-          </div>
-
           {trustItems.map((item) => (
             <div
               key={item.title}
