@@ -29,9 +29,9 @@ export default function DatenschutzPage() {
           <div>
             <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">2. Hosting</h2>
             <p>
-              Diese Website wird über <strong>GitHub Pages</strong> gehostet (GitHub Inc., 88 Colin P. Kelly Jr. Street,
-              San Francisco, CA 94107, USA). Beim Aufruf der Website werden automatisch technische Zugriffsdaten
-              in Server-Logfiles gespeichert, insbesondere:
+              Diese Website wird gehostet von <strong>ALL-INKL.COM – Neue Medien Münnich</strong>,
+              Hauptstraße 68, 02742 Friedersdorf, Deutschland. Beim Aufruf der Website werden
+              automatisch technische Zugriffsdaten in Server-Logfiles gespeichert, insbesondere:
             </p>
             <ul className="list-disc pl-5 space-y-1 mt-2">
               <li>IP-Adresse des anfragenden Geräts</li>
@@ -41,19 +41,17 @@ export default function DatenschutzPage() {
               <li>Datum und Uhrzeit der Serveranfrage</li>
             </ul>
             <p className="mt-3">
-              Diese Daten werden von GitHub erhoben und vorübergehend gespeichert. Ich habe keinen Zugriff
-              auf diese Logfiles. Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
-              (berechtigtes Interesse an der technischen Bereitstellung und Sicherheit der Website).
-              Es kann dabei zu einer Übermittlung von Daten in die USA kommen. GitHub Inc. ist unter dem
-              EU-US Data Privacy Framework (DPF) zertifiziert, sodass ein angemessenes Datenschutzniveau
-              gewährleistet ist. Weitere Informationen:{" "}
+              Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+              Interesse an der technischen Bereitstellung und Sicherheit der Website). Die Server
+              von ALL-INKL.COM befinden sich ausschließlich in Deutschland. Es findet keine
+              Übermittlung in Drittländer statt. Weitere Informationen:{" "}
               <a
-                href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+                href="https://all-inkl.com/datenschutzinformationen/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
               >
-                GitHub Privacy Statement
+                Datenschutzinformationen von ALL-INKL.COM
               </a>
               .
             </p>
