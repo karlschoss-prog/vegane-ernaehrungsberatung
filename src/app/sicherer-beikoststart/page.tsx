@@ -108,7 +108,7 @@ export default function SichererBeikostPage() {
                 href={SITE.calendly}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-blush-dark text-white hover:bg-blush-dark/90 shadow-sm"
+                className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-blush-dark text-white hover:bg-blush-dark/90 shadow-sm whitespace-nowrap"
               >
                 Kostenloses Erstgespräch buchen
               </a>
@@ -294,7 +294,7 @@ export default function SichererBeikostPage() {
                 href={SITE.calendly}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-blush-dark hover:bg-cream"
+                className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-blush-dark hover:bg-cream whitespace-nowrap"
               >
                 Kostenloses Erstgespräch buchen
               </a>

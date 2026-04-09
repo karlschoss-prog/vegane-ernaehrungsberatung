@@ -107,10 +107,10 @@ export default function SichereSchwangerschaftPage() {
               „Ich will das richtig machen."
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button href={SITE.calendly} size="lg" external>
+              <Button href={SITE.calendly} size="lg" external className="whitespace-nowrap">
                 Kostenloses Erstgespräch buchen
               </Button>
-              <Button href={STRIPE.schwangerschaft} variant="ghost" size="lg">
+              <Button href={STRIPE.schwangerschaft} variant="ghost" size="lg" className="whitespace-nowrap">
                 Direkt buchen
               </Button>
             </motion.div>
@@ -288,7 +288,7 @@ export default function SichereSchwangerschaftPage() {
                 href={SITE.calendly}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-sage-dark hover:bg-cream"
+                className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-sage-dark hover:bg-cream whitespace-nowrap"
               >
                 Kostenloses Erstgespräch buchen
               </a>
