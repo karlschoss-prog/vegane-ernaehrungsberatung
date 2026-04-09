@@ -46,6 +46,15 @@ export default function Footer() {
               Zertifizierte vegane Ernährungsberaterin für Schwangerschaft, Stillzeit und Beikost.
               Dein individueller Weg zu einer sicheren veganen Ernährung.
             </p>
+            {/* ecodemy-Siegel */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/ecodemy-siegel-ausbildung-vegane-ernaehrungsberaterin-vea-150px-2x.png`}
+              alt="ecodemy Siegel – Geprüfte & zertifizierte vegane Ernährungsberaterin"
+              width={150}
+              height={120}
+              className="mt-2"
+            />
           </div>
 
           {/* Spalte 2: Navigation */}
