@@ -33,80 +33,78 @@ export default function ProgramCards() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
             {/* Program 1 */}
 
-            <motion.div
-              variants={fadeInUp}
-              className="bg-white rounded-card-lg p-7 shadow-sm border border-sage-light hover:shadow-xl hover:border-sage-dark hover:-translate-y-1 transition-all duration-200 group cursor-pointer"
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-sage-light text-sage-dark text-xs font-semibold rounded-full">
-                  <Clock size={12} />
-                  {PROGRAMS.schwangerschaft.duration}
-                </span>
-              </div>
-              <h3 className="font-serif text-2xl font-semibold text-charcoal mb-3">
-                {PROGRAMS.schwangerschaft.title}
-              </h3>
-              <ul className="space-y-2 mb-5">
-                {[
-                  "Du weißt genau, welche Supplements du wirklich brauchst",
-                  "Begleitung von Anfang bis Ende der Schwangerschaft",
-                  "Deine Fragen bleiben nicht lange unbeantwortet",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-sm text-soft-gray">
-                    <Check size={14} className="text-sage-dark flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mb-6">
-                <span className="font-serif text-3xl font-semibold text-sage-dark">
-                  {PROGRAMS.schwangerschaft.price}
-                </span>
-              </div>
+            <motion.div variants={fadeInUp}>
               <Link
                 href={PROGRAMS.schwangerschaft.slug}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-sage-dark group-hover:gap-3 transition-all"
+                className="block bg-white rounded-card-lg p-7 shadow-sm border border-sage-light hover:shadow-xl hover:border-sage-dark hover:-translate-y-1 transition-all duration-200 group"
               >
-                Mehr erfahren <ArrowRight size={16} />
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-sage-light text-sage-dark text-xs font-semibold rounded-full">
+                    <Clock size={12} />
+                    {PROGRAMS.schwangerschaft.duration}
+                  </span>
+                </div>
+                <h3 className="font-serif text-2xl font-semibold text-charcoal mb-3">
+                  {PROGRAMS.schwangerschaft.title}
+                </h3>
+                <ul className="space-y-2 mb-5">
+                  {[
+                    "Du weißt genau, welche Supplements du wirklich brauchst",
+                    "Begleitung von Anfang bis Ende der Schwangerschaft",
+                    "Deine Fragen bleiben nicht lange unbeantwortet",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-soft-gray">
+                      <Check size={14} className="text-sage-dark flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mb-6">
+                  <span className="font-serif text-3xl font-semibold text-sage-dark">
+                    {PROGRAMS.schwangerschaft.price}
+                  </span>
+                </div>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-sage-dark group-hover:gap-3 transition-all">
+                  Mehr erfahren <ArrowRight size={16} />
+                </span>
               </Link>
             </motion.div>
 
             {/* Program 2 */}
-            <motion.div
-              variants={fadeInUp}
-              className="bg-blush/20 rounded-card-lg p-7 shadow-sm border border-blush/40 hover:shadow-xl hover:border-taupe/60 hover:-translate-y-1 transition-all duration-200 group cursor-pointer"
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blush/40 text-taupe text-xs font-semibold rounded-full">
-                  <Clock size={12} />
-                  {PROGRAMS.beikost.duration}
-                </span>
-              </div>
-              <h3 className="font-serif text-2xl font-semibold text-charcoal mb-3">
-                {PROGRAMS.beikost.title}
-              </h3>
-              <ul className="space-y-2 mb-5">
-                {[
-                  "Individueller Beikostplan abgestimmt auf dein Kind",
-                  "Begleitung vom ersten Löffel bis zur gemeinsamen Mahlzeit",
-                  "Deine Fragen bleiben nicht lange unbeantwortet",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-sm text-soft-gray">
-                    <Check size={14} className="text-taupe flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="mb-6">
-                <span className="font-serif text-3xl font-semibold text-taupe">
-                  {PROGRAMS.beikost.price}
-                </span>
-              </div>
+            <motion.div variants={fadeInUp}>
               <Link
                 href={PROGRAMS.beikost.slug}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-taupe group-hover:gap-3 transition-all"
+                className="block bg-blush/20 rounded-card-lg p-7 shadow-sm border border-blush/40 hover:shadow-xl hover:border-taupe/60 hover:-translate-y-1 transition-all duration-200 group"
               >
-                Mehr erfahren <ArrowRight size={16} />
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blush/40 text-taupe text-xs font-semibold rounded-full">
+                    <Clock size={12} />
+                    {PROGRAMS.beikost.duration}
+                  </span>
+                </div>
+                <h3 className="font-serif text-2xl font-semibold text-charcoal mb-3">
+                  {PROGRAMS.beikost.title}
+                </h3>
+                <ul className="space-y-2 mb-5">
+                  {[
+                    "Individueller Beikostplan abgestimmt auf dein Kind",
+                    "Begleitung vom ersten Löffel bis zur gemeinsamen Mahlzeit",
+                    "Deine Fragen bleiben nicht lange unbeantwortet",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-soft-gray">
+                      <Check size={14} className="text-taupe flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mb-6">
+                  <span className="font-serif text-3xl font-semibold text-taupe">
+                    {PROGRAMS.beikost.price}
+                  </span>
+                </div>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-taupe group-hover:gap-3 transition-all">
+                  Mehr erfahren <ArrowRight size={16} />
+                </span>
               </Link>
             </motion.div>
           </div>
