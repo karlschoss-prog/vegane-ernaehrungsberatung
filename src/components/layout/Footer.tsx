@@ -140,8 +140,8 @@ export default function Footer() {
             Die Ernährungsberatung von Christin Schoß ersetzt keine ärztliche Beratung, Diagnose
             oder Behandlung. Bei gesundheitlichen Beschwerden wende dich bitte an deinen Arzt oder
             deine Ärztin. Christin Schoß ist zertifizierte vegane Ernährungsberaterin (ecodemy,
-            ZFU-zugelassen). Die Beratung stellt keine Heilkunde im Sinne des
-            Heilpraktikergesetzes dar.
+            ZFU-zugelassen).<br />
+            Die Beratung stellt keine Heilkunde im Sinne des Heilpraktikergesetzes dar.
           </p>
           <p className="mt-4 text-xs text-white/30">
             © {new Date().getFullYear()} Christin Schoß. Alle Rechte vorbehalten.
