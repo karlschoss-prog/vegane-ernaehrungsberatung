@@ -260,8 +260,8 @@ export default function UeberMichPage() {
 
             <motion.div variants={fadeInUp} className="text-center">
               <p className="text-charcoal mb-5">
-                Im kostenlosen Erstgespräch schauen wir gemeinsam, was für dich der richtige Weg
-                ist. Kein Druck, keine Verpflichtung.
+                Im kostenlosen Erstgespräch schauen wir gemeinsam, was für dich der richtige Weg ist.<br />
+                Kein Druck, keine Verpflichtung.
               </p>
               <Button href={SITE.calendly} size="lg" external>
                 Kostenloses Erstgespräch buchen
