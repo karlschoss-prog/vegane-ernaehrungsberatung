@@ -89,10 +89,10 @@ export default function Hero() {
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-3">
-              <Button href={SITE.calendly} size="lg" external className="w-full sm:w-auto">
+              <Button href={SITE.calendly} size="lg" external className="w-full sm:w-auto whitespace-nowrap">
                 Kostenloses Erstgespräch buchen
               </Button>
-              <Button href="/#programme" variant="ghost" size="lg" className="w-full sm:w-auto">
+              <Button href="/#programme" variant="ghost" size="lg" className="w-full sm:w-auto whitespace-nowrap">
                 Programme entdecken
               </Button>
             </motion.div>
