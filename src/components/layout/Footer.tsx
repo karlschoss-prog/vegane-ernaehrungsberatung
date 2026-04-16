@@ -129,6 +129,9 @@ export default function Footer() {
               <Link href="/datenschutz" className="text-sm text-white/60 hover:text-white transition-colors">
                 Datenschutzerklärung
               </Link>
+              <Link href="/agb" className="text-sm text-white/60 hover:text-white transition-colors">
+                AGB
+              </Link>
               <CookieSettingsButton />
             </nav>
           </div>
