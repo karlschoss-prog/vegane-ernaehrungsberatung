@@ -26,7 +26,7 @@ export default function ImpressumPage() {
           <div>
             <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">Kontakt</h2>
             <p className="text-soft-gray leading-relaxed">
-              Telefon: [wird nachgereicht]<br />
+              Telefon: 0178 4558828<br />
               E-Mail: hallo@christinschoss.de
             </p>
           </div>
