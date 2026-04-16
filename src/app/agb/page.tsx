@@ -14,13 +14,19 @@ export default function AGBPage() {
 
         <div className="prose prose-sm max-w-none text-charcoal space-y-8">
 
+          <p className="text-xs text-soft-gray/70 italic">
+            Alle Personenbezeichnungen in diesen AGB gelten gleichermaßen für alle Geschlechter und
+            Geschlechtsidentitäten.
+          </p>
+
           <div>
             <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 1 Geltungsbereich</h2>
             <p className="text-soft-gray leading-relaxed">
               Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge zwischen Christin
-              Schoß (im Folgenden „Anbieterin"), Hagenring 89, 38106 Braunschweig, und der Kundin über
-              die Erbringung von Ernährungsberatungsleistungen. Abweichende Bedingungen der Kundin
-              werden nicht anerkannt, es sei denn, die Anbieterin stimmt diesen ausdrücklich schriftlich zu.
+              Schoß (im Folgenden „Anbieterin"), Hagenring 89, 38106 Braunschweig, und der Kundin oder
+              dem Kunden (im Folgenden einheitlich „Kundin oder Kunde") über die Erbringung von
+              Ernährungsberatungsleistungen. Abweichende Bedingungen der Kundin oder des Kunden werden
+              nicht anerkannt, es sei denn, die Anbieterin stimmt diesen ausdrücklich schriftlich zu.
             </p>
           </div>
 
@@ -39,8 +45,8 @@ export default function AGBPage() {
             </p>
             <p className="text-soft-gray leading-relaxed">
               Nicht abgerufene Beratungsgespräche verfallen nach Ablauf der vereinbarten Programmlaufzeit,
-              sofern das Versäumnis nicht von der Anbieterin zu vertreten ist. Die Kundin ist dafür
-              verantwortlich, Termine innerhalb der Programmlaufzeit zu vereinbaren und wahrzunehmen. Eine
+              sofern das Versäumnis nicht von der Anbieterin zu vertreten ist. Die Kundin oder der Kunde
+              ist dafür verantwortlich, Termine innerhalb der Programmlaufzeit zu vereinbaren und wahrzunehmen. Eine
               Verlängerung der Laufzeit oder Erstattung für nicht genutzte Termine ist in diesem Fall
               ausgeschlossen.
             </p>
@@ -49,15 +55,16 @@ export default function AGBPage() {
           <div>
             <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 3 Vertragsschluss und Mindestalter</h2>
             <p className="text-soft-gray leading-relaxed mb-2">
-              Ein Vertrag kommt zustande, sobald die Kundin eine Buchung über den bereitgestellten
-              Zahlungslink abschließt und die Zahlung (oder die erste Rate) erfolgreich verarbeitet wurde.
-              Mit der Buchung bestätigt die Kundin, diese AGB gelesen und akzeptiert zu haben.
+              Ein Vertrag kommt zustande, sobald die Kundin oder der Kunde eine Buchung über den
+              bereitgestellten Zahlungslink abschließt und die Zahlung (oder die erste Rate) erfolgreich
+              verarbeitet wurde. Mit der Buchung bestätigt die Kundin oder der Kunde, diese AGB gelesen
+              und akzeptiert zu haben.
             </p>
             <p className="text-soft-gray leading-relaxed mb-2">
               Die Inanspruchnahme der Beratungsleistungen setzt ein Mindestalter von 18 Jahren voraus.
               Minderjährige dürfen nur mit ausdrücklicher schriftlicher Zustimmung eines gesetzlichen
-              Vertreters buchen. Mit der Buchung versichert die Kundin, das 18. Lebensjahr vollendet zu
-              haben oder die erforderliche Zustimmung eingeholt zu haben.
+              Vertreters buchen. Mit der Buchung versichert die Kundin oder der Kunde, das 18. Lebensjahr
+              vollendet zu haben oder die erforderliche Zustimmung eingeholt zu haben.
             </p>
             <p className="text-soft-gray leading-relaxed">
               Die Anbieterin behält sich vor, eine Buchung ohne Angabe von Gründen abzulehnen. In diesem
@@ -74,7 +81,7 @@ export default function AGBPage() {
             <p className="text-soft-gray leading-relaxed mb-2">
               Die Zahlung erfolgt über den Zahlungsdienstleister Stripe. Bei Ratenzahlung werden die
               einzelnen Raten automatisch zu den vereinbarten Fälligkeitsterminen eingezogen. Kommt die
-              Kundin mit einer Rate in Verzug, ist die Anbieterin berechtigt, die Beratung bis zum
+              Kundin oder der Kunde mit einer Rate in Verzug, ist die Anbieterin berechtigt, die Beratung bis zum
               vollständigen Ausgleich zu pausieren.
             </p>
             <p className="text-soft-gray leading-relaxed">
@@ -164,18 +171,18 @@ export default function AGBPage() {
             </p>
             <p className="text-soft-gray leading-relaxed mb-2">
               Die Empfehlungen der Anbieterin basieren auf allgemeinen ernährungswissenschaftlichen
-              Erkenntnissen sowie auf den von der Kundin bereitgestellten persönlichen Angaben. Sie stellen
+              Erkenntnissen sowie auf den von der Kundin oder dem Kunden bereitgestellten persönlichen Angaben. Sie stellen
               keine medizinische Diagnose dar und können eine solche nicht ersetzen.
             </p>
             <p className="text-soft-gray leading-relaxed mb-2">
               Bei bestehenden gesundheitlichen Erkrankungen, Schwangerschaftskomplikationen oder anderen
-              medizinisch relevanten Zuständen ist die Kundin verpflichtet, vor Beginn der Beratung
-              Rücksprache mit ihrer Ärztin oder ihrem Arzt zu halten und die Anbieterin hierüber zu
-              informieren.
+              medizinisch relevanten Zuständen ist die Kundin oder der Kunde verpflichtet, vor Beginn der
+              Beratung Rücksprache mit einer Ärztin oder einem Arzt zu halten und die Anbieterin hierüber
+              zu informieren.
             </p>
             <p className="text-soft-gray leading-relaxed">
               Die Anbieterin übernimmt keine Haftung für gesundheitliche Veränderungen, die die Kundin
-              während oder nach der Beratung erlebt, sofern diese nicht auf einem nachweisbar grob
+              oder der Kunde während oder nach der Beratung erlebt, sofern diese nicht auf einem nachweisbar grob
               fahrlässigen oder vorsätzlichen Handeln der Anbieterin beruhen. Es wird keine Garantie auf
               bestimmte gesundheitliche Ergebnisse oder Verläufe gegeben.
             </p>
@@ -196,17 +203,17 @@ export default function AGBPage() {
               Haftung auf den vorhersehbaren, vertragstypischen Schaden begrenzt.
             </p>
             <p className="text-soft-gray leading-relaxed">
-              Die Anbieterin haftet nicht für Schäden, die dadurch entstehen, dass die Kundin falsche,
-              unvollständige oder irreführende Angaben zu ihrer Gesundheit, Schwangerschaft, bestehenden
+              Die Anbieterin haftet nicht für Schäden, die dadurch entstehen, dass die Kundin oder der
+              Kunde falsche, unvollständige oder irreführende Angaben zur Gesundheit, Schwangerschaft, bestehenden
               Erkrankungen oder Medikamenten gemacht hat.
             </p>
           </div>
 
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 8 Mitwirkungspflichten der Kundin</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 8 Mitwirkungspflichten der Kundin oder des Kunden</h2>
             <p className="text-soft-gray leading-relaxed mb-2">
-              Die Kundin verpflichtet sich, alle für die Beratung relevanten Informationen vollständig und
-              wahrheitsgemäß anzugeben. Hierzu gehören insbesondere:
+              Die Kundin oder der Kunde verpflichtet sich, alle für die Beratung relevanten Informationen
+              vollständig und wahrheitsgemäß anzugeben. Hierzu gehören insbesondere:
             </p>
             <ul className="list-disc pl-5 space-y-1 text-soft-gray text-sm mb-3">
               <li>Bestehende Erkrankungen und Unverträglichkeiten</li>
@@ -215,19 +222,20 @@ export default function AGBPage() {
               <li>Besonderheiten der Schwangerschaft oder Stillzeit</li>
             </ul>
             <p className="text-soft-gray leading-relaxed mb-2">
-              Die Kundin ist für die Umsetzung der erarbeiteten Empfehlungen eigenverantwortlich. Die
+              Die Kundin oder der Kunde ist für die Umsetzung der erarbeiteten Empfehlungen eigenverantwortlich. Die
               Anbieterin gibt Empfehlungen und Unterstützung, kann aber keine bestimmten gesundheitlichen
               Ergebnisse garantieren, da diese von zahlreichen individuellen Faktoren abhängen.
             </p>
             <p className="text-soft-gray leading-relaxed mb-2">
-              <strong>Technische Voraussetzungen:</strong> Die Kundin ist verpflichtet, für eine stabile
-              Internetverbindung und ein funktionsfähiges Endgerät (Kamera und Mikrofon) zu sorgen.
-              Technische Störungen auf Seite der Kundin berechtigen nicht zur Forderung von Ersatzterminen
-              oder Rückerstattungen, sofern die Anbieterin nicht erreichbar war.
+              <strong>Technische Voraussetzungen:</strong> Die Kundin oder der Kunde ist verpflichtet,
+              für eine stabile Internetverbindung und ein funktionsfähiges Endgerät (Kamera und Mikrofon)
+              zu sorgen. Technische Störungen auf Seite der Kundin oder des Kunden berechtigen nicht zur
+              Forderung von Ersatzterminen oder Rückerstattungen, sofern die Anbieterin nicht erreichbar war.
             </p>
             <p className="text-soft-gray leading-relaxed">
-              <strong>Aufzeichnungsverbot:</strong> Die Kundin ist nicht berechtigt, Videogespräche oder
-              sonstige Kommunikation ohne ausdrückliche schriftliche Zustimmung der Anbieterin aufzuzeichnen.
+              <strong>Aufzeichnungsverbot:</strong> Die Kundin oder der Kunde ist nicht berechtigt,
+              Videogespräche oder sonstige Kommunikation ohne ausdrückliche schriftliche Zustimmung der
+              Anbieterin aufzuzeichnen.
               Verstöße hiergegen können zivilrechtliche und strafrechtliche Konsequenzen nach sich ziehen.
             </p>
           </div>
@@ -254,15 +262,15 @@ export default function AGBPage() {
               unterliegen dem Urheberrecht der Anbieterin.
             </p>
             <p className="text-soft-gray leading-relaxed mb-2">
-              Die Kundin erhält ein einfaches, nicht übertragbares Nutzungsrecht ausschließlich für den
-              persönlichen Gebrauch. Eine Weitergabe an Dritte, Veröffentlichung oder kommerzielle Nutzung
+              Die Kundin oder der Kunde erhält ein einfaches, nicht übertragbares Nutzungsrecht
+              ausschließlich für den persönlichen Gebrauch. Eine Weitergabe an Dritte, Veröffentlichung oder kommerzielle Nutzung
               der erstellten Materialien ist ohne ausdrückliche schriftliche Zustimmung der Anbieterin
               nicht gestattet.
             </p>
             <p className="text-soft-gray leading-relaxed">
-              <strong>Abtretungsverbot:</strong> Die Kundin darf ihre Rechte und Pflichten aus diesem
-              Vertrag nicht ohne Zustimmung der Anbieterin auf Dritte übertragen. Das gebuchte Programm
-              ist personengebunden und gilt ausschließlich für die buchende Kundin.
+              <strong>Abtretungsverbot:</strong> Die Kundin oder der Kunde darf Rechte und Pflichten aus
+              diesem Vertrag nicht ohne Zustimmung der Anbieterin auf Dritte übertragen. Das gebuchte
+              Programm ist personengebunden und gilt ausschließlich für die buchende Person.
             </p>
           </div>
 
@@ -275,8 +283,9 @@ export default function AGBPage() {
               Erbringung der Beratungsleistung erforderlich.
             </p>
             <p className="text-soft-gray leading-relaxed mb-2">
-              Mit der Buchung erteilt die Kundin ihre ausdrückliche Einwilligung gemäß Art. 9 Abs. 2 lit. a
-              DSGVO zur Verarbeitung dieser Gesundheitsdaten zum Zweck der Ernährungsberatung. Diese
+              Mit der Buchung erteilt die Kundin oder der Kunde die ausdrückliche Einwilligung gemäß
+              Art. 9 Abs. 2 lit. a DSGVO zur Verarbeitung dieser Gesundheitsdaten zum Zweck der
+              Ernährungsberatung. Diese
               Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden, was jedoch die
               weitere Erbringung der Beratungsleistung ausschließt.
             </p>
@@ -293,15 +302,15 @@ export default function AGBPage() {
             <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 12 Kündigung und vorzeitige Beendigung</h2>
             <p className="text-soft-gray leading-relaxed mb-2">
               Eine ordentliche Kündigung während eines laufenden Programms ist ausgeschlossen. Die Kundin
-              kann den Vertrag aus wichtigem Grund außerordentlich kündigen, wenn ihr die Fortsetzung der
-              Beratung nicht zumutbar ist (z. B. bei dauerhafter schwerwiegender Erkrankung). In diesem
+              oder der Kunde kann den Vertrag aus wichtigem Grund außerordentlich kündigen, wenn die
+              Fortsetzung der Beratung nicht zumutbar ist (z. B. bei dauerhafter schwerwiegender Erkrankung). In diesem
               Fall werden bereits erbrachte Leistungen anteilig abgerechnet; der verbleibende Betrag wird
               erstattet.
             </p>
             <p className="text-soft-gray leading-relaxed">
               Die Anbieterin kann den Vertrag aus wichtigem Grund kündigen, insbesondere wenn die Kundin
-              trotz Mahnung mit einer Ratenzahlung in Verzug ist, ihre Mitwirkungspflichten gemäß § 8
-              dauerhaft verletzt oder das Vertrauensverhältnis nachhaltig gestört ist. Bereits geleistete
+              oder der Kunde trotz Mahnung mit einer Ratenzahlung in Verzug ist, die Mitwirkungspflichten
+              gemäß § 8 dauerhaft verletzt oder das Vertrauensverhältnis nachhaltig gestört ist. Bereits geleistete
               Zahlungen werden in diesem Fall nicht erstattet.
             </p>
           </div>
