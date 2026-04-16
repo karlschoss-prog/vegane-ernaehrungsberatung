@@ -42,7 +42,6 @@ import Link from "next/link";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import { SITE, STRIPE } from "@/lib/constants";
 import Button from "@/components/ui/Button";
-import ContactForm from "@/components/forms/ContactForm";
 
 export default function KontaktPage() {
   const shouldReduceMotion = useReducedMotion();
@@ -227,7 +226,7 @@ export default function KontaktPage() {
         </div>
       </section>
 
-      {/* Kontaktformular + Alternativ */}
+      {/* Schreib mir + Alternativ */}
       <section id="schreib-mir" className="section-padding bg-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -244,9 +243,20 @@ export default function KontaktPage() {
                 Du hast eine allgemeine Frage, die kein Gespräch erfordert? Schreib mir gerne. Ich
                 melde mich innerhalb von 48 Stunden.
               </motion.p>
-              <motion.div variants={fadeInUp}>
-                <ContactForm />
-              </motion.div>
+              <motion.a
+                variants={fadeInUp}
+                href={`mailto:${SITE.email}?subject=Anfrage%20%E2%80%93%20christinschoss.de`}
+                className="inline-flex items-center gap-3 px-6 py-4 bg-sage text-white font-semibold rounded-card hover:bg-sage-dark transition-colors"
+              >
+                <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                E-Mail schreiben
+              </motion.a>
+              <motion.p variants={fadeInUp} className="mt-3 text-xs text-soft-gray/70">
+                Öffnet dein E-Mail-Programm mit {SITE.email}
+              </motion.p>
             </motion.div>
 
             <motion.div

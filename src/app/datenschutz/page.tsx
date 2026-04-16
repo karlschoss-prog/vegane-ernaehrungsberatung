@@ -69,29 +69,17 @@ export default function DatenschutzPage() {
             </p>
           </div>
 
-          {/* 4. Kontaktformular */}
+          {/* 4. E-Mail-Kontakt */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">4. Kontaktformular</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">4. Kontakt per E-Mail</h2>
             <p>
-              Wenn du das Kontaktformular verwendest, werden die von dir eingegebenen Daten (Name,
-              E-Mail-Adresse, Nachricht) zur Bearbeitung deiner Anfrage verarbeitet. Rechtsgrundlage
-              ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) sowie deine ausdrückliche Einwilligung
-              gemäß Art. 6 Abs. 1 lit. a DSGVO. Die Daten werden nach Erledigung deiner Anfrage gelöscht,
-              sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
-            </p>
-            <p className="mt-2">
-              Das Formular wird über den Dienst <strong>Formspree</strong> (Formspree Inc., 19 Morris Ave,
-              Brooklyn, NY 11211, USA) übermittelt. Formspree Inc. ist unter dem EU-US Data Privacy
-              Framework (DPF) zertifiziert. Weitere Informationen:{" "}
-              <a
-                href="https://formspree.io/legal/privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
-              >
-                Formspree Datenschutzerklärung
-              </a>
-              .
+              Wenn du mir per E-Mail schreibst, werden die von dir übermittelten Daten (Name,
+              E-Mail-Adresse, Nachricht) ausschließlich zur Bearbeitung deiner Anfrage verarbeitet.
+              Es wird kein Drittanbieter eingesetzt. Die E-Mail landet direkt in meinem Postfach.
+              Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) sowie Art. 6 Abs. 1
+              lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen). Die Daten werden
+              nach abschließender Bearbeitung deiner Anfrage gelöscht, sofern keine gesetzlichen
+              Aufbewahrungspflichten entgegenstehen.
             </p>
           </div>
 
