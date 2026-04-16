@@ -34,9 +34,8 @@ export default function ImpressumPage() {
           <div>
             <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">Steuerliche Angaben</h2>
             <p className="text-soft-gray leading-relaxed">
-              Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: beantragt<br />
-              Steuernummer: beantragt<br />
-              Beide Angaben werden nach Erteilung durch das zuständige Finanzamt ergänzt.
+              Steuernummer: 14/141/03031<br />
+              Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: beantragt (wird nach Erteilung ergänzt)
             </p>
           </div>
 
