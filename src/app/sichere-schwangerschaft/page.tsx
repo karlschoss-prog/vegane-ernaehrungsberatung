@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion, useInView, useReducedMotion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Check, Clock, MessageCircle, ShoppingBag, RefreshCw, FileText, Users } from "lucide-react";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
+import Link from "next/link";
 import Button from "@/components/ui/Button";
 import { SITE, STRIPE } from "@/lib/constants";
 
@@ -114,6 +115,13 @@ export default function SichereSchwangerschaftPage() {
                 Direkt buchen
               </Button>
             </motion.div>
+            <motion.p variants={fadeInUp} className="mt-4 text-xs text-soft-gray/70">
+              Mit der Buchung akzeptierst du unsere{" "}
+              <Link href="/agb" className="underline underline-offset-2 hover:text-charcoal transition-colors">
+                AGB
+              </Link>
+              .
+            </motion.p>
           </motion.div>
         </div>
       </section>
@@ -302,7 +310,15 @@ export default function SichereSchwangerschaftPage() {
               </a>
             </motion.div>
 
-            <motion.p variants={fadeInUp} className="mt-8 text-white/50 text-sm">
+            <motion.p variants={fadeInUp} className="mt-4 text-xs text-white/40">
+              Mit der Buchung akzeptierst du unsere{" "}
+              <Link href="/agb" className="underline underline-offset-2 hover:text-white/70 transition-colors">
+                AGB
+              </Link>
+              .
+            </motion.p>
+
+            <motion.p variants={fadeInUp} className="mt-4 text-white/50 text-sm">
               Fragen oder ein anderes Anliegen?{" "}
               <a href="/kontakt#schreib-mir" className="text-white/80 font-semibold underline underline-offset-2 hover:text-white transition-colors">
                 Schreib mir gerne.

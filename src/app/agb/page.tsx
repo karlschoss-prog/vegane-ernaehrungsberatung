@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "AGB",
@@ -24,26 +25,39 @@ export default function AGBPage() {
           </div>
 
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 2 Leistungsbeschreibung</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 2 Leistungsbeschreibung und Programmlaufzeit</h2>
             <p className="text-soft-gray leading-relaxed mb-2">
               Die Anbieterin bietet individuelle vegane Ernährungsberatung in Form von Online-Programmen an.
               Die Programme umfassen persönliche Videocalls, schriftliche Begleitdokumente sowie
               werktäglichen Support über WhatsApp. Die konkrete Leistungsbeschreibung ergibt sich aus der
               jeweils gebuchten Programmseite.
             </p>
-            <p className="text-soft-gray leading-relaxed">
+            <p className="text-soft-gray leading-relaxed mb-2">
               Die Beratungsleistungen werden ausschließlich online (per Videokonferenz und Textnachrichten)
               erbracht. Ein Anspruch auf persönliche Präsenztermine besteht nicht, sofern nichts anderes
               vereinbart wurde.
             </p>
+            <p className="text-soft-gray leading-relaxed">
+              Nicht abgerufene Beratungsgespräche verfallen nach Ablauf der vereinbarten Programmlaufzeit,
+              sofern das Versäumnis nicht von der Anbieterin zu vertreten ist. Die Kundin ist dafür
+              verantwortlich, Termine innerhalb der Programmlaufzeit zu vereinbaren und wahrzunehmen. Eine
+              Verlängerung der Laufzeit oder Erstattung für nicht genutzte Termine ist in diesem Fall
+              ausgeschlossen.
+            </p>
           </div>
 
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 3 Vertragsschluss</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 3 Vertragsschluss und Mindestalter</h2>
             <p className="text-soft-gray leading-relaxed mb-2">
               Ein Vertrag kommt zustande, sobald die Kundin eine Buchung über den bereitgestellten
               Zahlungslink abschließt und die Zahlung (oder die erste Rate) erfolgreich verarbeitet wurde.
               Mit der Buchung bestätigt die Kundin, diese AGB gelesen und akzeptiert zu haben.
+            </p>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              Die Inanspruchnahme der Beratungsleistungen setzt ein Mindestalter von 18 Jahren voraus.
+              Minderjährige dürfen nur mit ausdrücklicher schriftlicher Zustimmung eines gesetzlichen
+              Vertreters buchen. Mit der Buchung versichert die Kundin, das 18. Lebensjahr vollendet zu
+              haben oder die erforderliche Zustimmung eingeholt zu haben.
             </p>
             <p className="text-soft-gray leading-relaxed">
               Die Anbieterin behält sich vor, eine Buchung ohne Angabe von Gründen abzulehnen. In diesem
@@ -79,14 +93,14 @@ export default function AGBPage() {
             <p className="text-soft-gray leading-relaxed mb-2">
               <strong>Erlöschen des Widerrufsrechts:</strong> Die Kundin stimmt ausdrücklich zu, dass mit
               der Erbringung der Dienstleistung vor Ablauf der Widerrufsfrist begonnen werden darf. Sie
-              bestätigt, dass sie weiß, dass ihr Widerrufsrecht mit vollständiger Vertragserfüllung durch
-              die Anbieterin erlischt. Sobald ein erstes Beratungsgespräch stattgefunden hat, gilt die
-              Dienstleistung als begonnen; eine anteilige Rückerstattung für nicht in Anspruch genommene
-              Leistungen ist in diesem Fall ausgeschlossen.
+              bestätigt, dass sie weiß, dass ihr Widerrufsrecht erlischt, sobald ein erstes
+              Beratungsgespräch stattgefunden hat. Eine anteilige Rückerstattung für danach nicht in
+              Anspruch genommene Leistungen ist ausgeschlossen.
             </p>
             <p className="text-soft-gray leading-relaxed">
-              Kein Widerrufsrecht besteht bei digitalen Inhalten, die bereits vollständig übermittelt
-              wurden und deren Übermittlung die Kundin ausdrücklich zugestimmt hat.
+              Kein Widerrufsrecht besteht bei digitalen Inhalten (z. B. individuell erstellten
+              Ernährungsplänen), die bereits vollständig übermittelt wurden und deren Übermittlung die
+              Kundin ausdrücklich zugestimmt hat.
             </p>
           </div>
 
@@ -109,9 +123,10 @@ export default function AGBPage() {
               informieren.
             </p>
             <p className="text-soft-gray leading-relaxed">
-              Die Anbieterin übernimmt keine Verantwortung und keine Haftung für gesundheitliche
-              Veränderungen, die die Kundin während oder nach der Beratung erlebt, sofern diese nicht auf
-              einem nachweisbar grob fahrlässigen oder vorsätzlichen Handeln der Anbieterin beruhen.
+              Die Anbieterin übernimmt keine Haftung für gesundheitliche Veränderungen, die die Kundin
+              während oder nach der Beratung erlebt, sofern diese nicht auf einem nachweisbar grob
+              fahrlässigen oder vorsätzlichen Handeln der Anbieterin beruhen. Es wird keine Garantie auf
+              bestimmte gesundheitliche Ergebnisse oder Verläufe gegeben.
             </p>
           </div>
 
@@ -142,16 +157,27 @@ export default function AGBPage() {
               Die Kundin verpflichtet sich, alle für die Beratung relevanten Informationen vollständig und
               wahrheitsgemäß anzugeben. Hierzu gehören insbesondere:
             </p>
-            <ul className="list-disc pl-5 space-y-1 text-soft-gray text-sm mb-2">
+            <ul className="list-disc pl-5 space-y-1 text-soft-gray text-sm mb-3">
               <li>Bestehende Erkrankungen und Unverträglichkeiten</li>
               <li>Eingenommene Medikamente oder Nahrungsergänzungsmittel</li>
               <li>Relevante ärztliche Befunde oder Diagnosen</li>
               <li>Besonderheiten der Schwangerschaft oder Stillzeit</li>
             </ul>
-            <p className="text-soft-gray leading-relaxed">
+            <p className="text-soft-gray leading-relaxed mb-2">
               Die Kundin ist für die Umsetzung der erarbeiteten Empfehlungen eigenverantwortlich. Die
               Anbieterin gibt Empfehlungen und Unterstützung, kann aber keine bestimmten gesundheitlichen
-              Ergebnisse oder Erfolge garantieren, da diese von zahlreichen individuellen Faktoren abhängen.
+              Ergebnisse garantieren, da diese von zahlreichen individuellen Faktoren abhängen.
+            </p>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              <strong>Technische Voraussetzungen:</strong> Die Kundin ist verpflichtet, für eine stabile
+              Internetverbindung und ein funktionsfähiges Endgerät (Kamera und Mikrofon) zu sorgen.
+              Technische Störungen auf Seite der Kundin berechtigen nicht zur Forderung von Ersatzterminen
+              oder Rückerstattungen, sofern die Anbieterin nicht erreichbar war.
+            </p>
+            <p className="text-soft-gray leading-relaxed">
+              <strong>Aufzeichnungsverbot:</strong> Die Kundin ist nicht berechtigt, Videogespräche oder
+              sonstige Kommunikation ohne ausdrückliche schriftliche Zustimmung der Anbieterin aufzuzeichnen.
+              Verstöße hiergegen können zivilrechtliche und strafrechtliche Konsequenzen nach sich ziehen.
             </p>
           </div>
 
@@ -160,7 +186,7 @@ export default function AGBPage() {
             <p className="text-soft-gray leading-relaxed mb-2">
               Vereinbarte Termine sind verbindlich. Absagen oder Verschiebungen sind bis spätestens 24
               Stunden vor dem vereinbarten Termin möglich. Bei kurzfristigeren Absagen oder Nichterscheinen
-              gilt der Termin als in Anspruch genommen.
+              gilt der Termin als in Anspruch genommen und verfällt ersatzlos.
             </p>
             <p className="text-soft-gray leading-relaxed">
               Die Anbieterin ist berechtigt, Termine in begründeten Ausnahmefällen (z. B. Krankheit) zu
@@ -170,33 +196,87 @@ export default function AGBPage() {
           </div>
 
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 10 Vertraulichkeit</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 10 Urheberrecht und Nutzungsrechte</h2>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              Alle von der Anbieterin erstellten Materialien, insbesondere individuelle Ernährungspläne,
+              Supplement-Empfehlungen, schriftliche Auswertungen und sonstige Beratungsunterlagen,
+              unterliegen dem Urheberrecht der Anbieterin.
+            </p>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              Die Kundin erhält ein einfaches, nicht übertragbares Nutzungsrecht ausschließlich für den
+              persönlichen Gebrauch. Eine Weitergabe an Dritte, Veröffentlichung oder kommerzielle Nutzung
+              der erstellten Materialien ist ohne ausdrückliche schriftliche Zustimmung der Anbieterin
+              nicht gestattet.
+            </p>
             <p className="text-soft-gray leading-relaxed">
-              Die Anbieterin behandelt alle im Rahmen der Beratung erhaltenen persönlichen und
-              gesundheitlichen Informationen vertraulich und gibt diese nicht an Dritte weiter. Die
-              Verarbeitung personenbezogener Daten erfolgt gemäß der Datenschutzerklärung auf dieser
-              Website.
+              <strong>Abtretungsverbot:</strong> Die Kundin darf ihre Rechte und Pflichten aus diesem
+              Vertrag nicht ohne Zustimmung der Anbieterin auf Dritte übertragen. Das gebuchte Programm
+              ist personengebunden und gilt ausschließlich für die buchende Kundin.
             </p>
           </div>
 
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 11 Kündigung und vorzeitige Beendigung</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 11 Datenschutz und Gesundheitsdaten</h2>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              Im Rahmen der Beratung werden personenbezogene Daten erhoben und verarbeitet, darunter
+              Gesundheitsdaten im Sinne von Art. 9 DSGVO (z. B. Informationen zur Schwangerschaft,
+              Erkrankungen, Unverträglichkeiten oder Medikamenteneinnahme). Diese Daten sind für die
+              Erbringung der Beratungsleistung erforderlich.
+            </p>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              Mit der Buchung erteilt die Kundin ihre ausdrückliche Einwilligung gemäß Art. 9 Abs. 2 lit. a
+              DSGVO zur Verarbeitung dieser Gesundheitsdaten zum Zweck der Ernährungsberatung. Diese
+              Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden, was jedoch die
+              weitere Erbringung der Beratungsleistung ausschließt.
+            </p>
+            <p className="text-soft-gray leading-relaxed">
+              Die Anbieterin behandelt alle personenbezogenen und gesundheitlichen Informationen vertraulich
+              und gibt diese nicht an Dritte weiter. Näheres zur Datenverarbeitung ergibt sich aus der{" "}
+              <Link href="/datenschutz" className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors">
+                Datenschutzerklärung
+              </Link>.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 12 Kündigung und vorzeitige Beendigung</h2>
             <p className="text-soft-gray leading-relaxed mb-2">
               Eine ordentliche Kündigung während eines laufenden Programms ist ausgeschlossen. Die Kundin
-              kann den Vertrag aus wichtigem Grund außerordentlich kündigen, wenn der Anbieterin eine
-              Fortsetzung der Beratung nicht zumutbar ist (z. B. bei dauerhafter Erkrankung). In diesem
+              kann den Vertrag aus wichtigem Grund außerordentlich kündigen, wenn ihr die Fortsetzung der
+              Beratung nicht zumutbar ist (z. B. bei dauerhafter schwerwiegender Erkrankung). In diesem
               Fall werden bereits erbrachte Leistungen anteilig abgerechnet; der verbleibende Betrag wird
               erstattet.
             </p>
             <p className="text-soft-gray leading-relaxed">
               Die Anbieterin kann den Vertrag aus wichtigem Grund kündigen, insbesondere wenn die Kundin
-              trotz Mahnung mit einer Ratenzahlung in Verzug ist oder ihre Mitwirkungspflichten gemäß § 8
-              dauerhaft verletzt. Bereits geleistete Zahlungen werden in diesem Fall nicht erstattet.
+              trotz Mahnung mit einer Ratenzahlung in Verzug ist, ihre Mitwirkungspflichten gemäß § 8
+              dauerhaft verletzt oder das Vertrauensverhältnis nachhaltig gestört ist. Bereits geleistete
+              Zahlungen werden in diesem Fall nicht erstattet.
             </p>
           </div>
 
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 12 Schlussbestimmungen</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 13 Streitbeilegung</h2>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{" "}
+              <a
+                href="https://ec.europa.eu/consumers/odr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
+              >
+                https://ec.europa.eu/consumers/odr/
+              </a>
+              . Die E-Mail-Adresse der Anbieterin lautet: hallo@christinschoss.de.
+            </p>
+            <p className="text-soft-gray leading-relaxed">
+              Die Anbieterin ist nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor
+              einer Verbraucherschlichtungsstelle teilzunehmen (§ 36 VSBG).
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 14 Schlussbestimmungen</h2>
             <p className="text-soft-gray leading-relaxed mb-2">
               Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.
             </p>

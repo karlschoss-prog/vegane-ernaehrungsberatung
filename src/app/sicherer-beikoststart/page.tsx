@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useReducedMotion, useScroll, useTransform, useSpring } from "framer-motion";
 import { Check, MessageCircle, ClipboardList, Search, Utensils, Users } from "lucide-react";
+import Link from "next/link";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
 import { SITE, STRIPE } from "@/lib/constants";
 
@@ -121,6 +122,13 @@ export default function SichererBeikostPage() {
                 Direkt buchen
               </a>
             </motion.div>
+            <motion.p variants={fadeInUp} className="mt-4 text-xs text-soft-gray/70">
+              Mit der Buchung akzeptierst du unsere{" "}
+              <Link href="/agb" className="underline underline-offset-2 hover:text-charcoal transition-colors">
+                AGB
+              </Link>
+              .
+            </motion.p>
           </motion.div>
         </div>
       </section>
@@ -308,7 +316,15 @@ export default function SichererBeikostPage() {
               </a>
             </motion.div>
 
-            <motion.p variants={fadeInUp} className="mt-8 text-white/50 text-sm">
+            <motion.p variants={fadeInUp} className="mt-4 text-xs text-white/40">
+              Mit der Buchung akzeptierst du unsere{" "}
+              <Link href="/agb" className="underline underline-offset-2 hover:text-white/70 transition-colors">
+                AGB
+              </Link>
+              .
+            </motion.p>
+
+            <motion.p variants={fadeInUp} className="mt-4 text-white/50 text-sm">
               Fragen oder ein anderes Anliegen?{" "}
               <a href="/kontakt#schreib-mir" className="text-white/80 font-semibold underline underline-offset-2 hover:text-white transition-colors">
                 Schreib mir gerne.
