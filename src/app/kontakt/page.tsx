@@ -166,6 +166,14 @@ export default function KontaktPage() {
               </motion.div>
             </div>
 
+            <p className="text-xs text-soft-gray/60 mt-4">
+              Mit der Buchung akzeptierst du unsere{" "}
+              <Link href="/agb" className="underline underline-offset-2 hover:text-charcoal transition-colors">
+                AGB
+              </Link>
+              .
+            </p>
+
             {/* Coming Soon */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5">
               <div className="relative bg-white/60 rounded-card-lg p-6 border border-sage-light/50 overflow-hidden">
