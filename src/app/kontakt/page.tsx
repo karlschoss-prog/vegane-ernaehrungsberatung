@@ -167,7 +167,7 @@ export default function KontaktPage() {
             </div>
 
             <p className="text-xs text-soft-gray/60 mt-4">
-              Mit der Buchung akzeptierst du unsere{" "}
+              Mit der Buchung akzeptierst du meine{" "}
               <Link href="/agb" className="underline underline-offset-2 hover:text-charcoal transition-colors">
                 AGB
               </Link>

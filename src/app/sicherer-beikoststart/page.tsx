@@ -123,7 +123,7 @@ export default function SichererBeikostPage() {
               </a>
             </motion.div>
             <motion.p variants={fadeInUp} className="mt-4 text-xs text-soft-gray/70">
-              Mit der Buchung akzeptierst du unsere{" "}
+              Mit der Buchung akzeptierst du meine{" "}
               <Link href="/agb" className="underline underline-offset-2 hover:text-charcoal transition-colors">
                 AGB
               </Link>
@@ -321,7 +321,7 @@ export default function SichererBeikostPage() {
             </motion.div>
 
             <motion.p variants={fadeInUp} className="mt-4 text-xs text-white/40">
-              Mit der Buchung akzeptierst du unsere{" "}
+              Mit der Buchung akzeptierst du meine{" "}
               <Link href="/agb" className="underline underline-offset-2 hover:text-white/70 transition-colors">
                 AGB
               </Link>
