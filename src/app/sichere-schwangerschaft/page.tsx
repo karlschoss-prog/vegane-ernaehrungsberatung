@@ -271,6 +271,10 @@ export default function SichereSchwangerschaftPage() {
               </a>
             </motion.div>
 
+            <motion.p variants={fadeInUp} className="text-white/35 text-xs mb-6">
+              Alle Preise inkl. 0 % USt. gem. § 19 UStG (Kleinunternehmerregelung).
+            </motion.p>
+
             {/* Included */}
             <motion.ul variants={fadeInUp} className="flex flex-col gap-2 text-sm text-white/75 mb-8 text-left max-w-sm mx-auto">
               {[

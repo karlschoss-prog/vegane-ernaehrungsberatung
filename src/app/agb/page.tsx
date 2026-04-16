@@ -84,24 +84,75 @@ export default function AGBPage() {
           </div>
 
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 5 Widerrufsrecht</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">§ 5 Widerrufsbelehrung</h2>
+
+            <p className="text-soft-gray font-semibold mb-2">Widerrufsrecht</p>
             <p className="text-soft-gray leading-relaxed mb-2">
-              Als Verbraucherin steht der Kundin ein gesetzliches Widerrufsrecht zu. Die Kundin kann den
-              Vertrag innerhalb von 14 Tagen nach Vertragsschluss ohne Angabe von Gründen widerrufen.
-              Der Widerruf ist in Textform (z. B. per E-Mail an hallo@christinschoss.de) zu erklären.
+              Du hast das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu
+              widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsschlusses.
             </p>
             <p className="text-soft-gray leading-relaxed mb-2">
-              <strong>Erlöschen des Widerrufsrechts:</strong> Die Kundin stimmt ausdrücklich zu, dass mit
-              der Erbringung der Dienstleistung vor Ablauf der Widerrufsfrist begonnen werden darf. Sie
-              bestätigt, dass sie weiß, dass ihr Widerrufsrecht erlischt, sobald ein erstes
-              Beratungsgespräch stattgefunden hat. Eine anteilige Rückerstattung für danach nicht in
-              Anspruch genommene Leistungen ist ausgeschlossen.
+              Um dein Widerrufsrecht auszuüben, musst du mich (Christin Schoß, Hagenring 89, 38106
+              Braunschweig, E-Mail: hallo@christinschoss.de) mittels einer eindeutigen Erklärung (z. B.
+              per E-Mail) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren. Du kannst
+              dafür das nachstehende Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben
+              ist. Zur Wahrung der Widerrufsfrist reicht es aus, dass du die Mitteilung vor Ablauf der
+              Widerrufsfrist absendest.
+            </p>
+
+            <p className="text-soft-gray font-semibold mb-2 mt-4">Folgen des Widerrufs</p>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              Wenn du diesen Vertrag widerrufst, habe ich dir alle Zahlungen, die ich von dir erhalten
+              habe, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem
+              die Mitteilung über deinen Widerruf bei mir eingegangen ist. Für diese Rückzahlung
+              verwende ich dasselbe Zahlungsmittel, das du bei der ursprünglichen Transaktion eingesetzt
+              hast, es sei denn, es wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden
+              dir wegen dieser Rückzahlung Entgelte berechnet.
+            </p>
+
+            <p className="text-soft-gray font-semibold mb-2 mt-4">Vorzeitiges Erlöschen des Widerrufsrechts</p>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              Du stimmst ausdrücklich zu, dass mit der Erbringung der Dienstleistung vor Ablauf der
+              Widerrufsfrist begonnen werden darf. Du bestätigst, dass du zur Kenntnis genommen hast,
+              dass dein Widerrufsrecht mit vollständiger Vertragserfüllung durch mich erlischt.
+            </p>
+            <p className="text-soft-gray leading-relaxed mb-2">
+              Hast du verlangt, dass die Dienstleistungen während der Widerrufsfrist beginnen sollen,
+              so hast du mir einen angemessenen Betrag zu zahlen, der dem Anteil der bereits erbrachten
+              Dienstleistungen bis zu dem Zeitpunkt entspricht, zu dem du mich von der Ausübung des
+              Widerrufsrechts unterrichtest, im Vergleich zum Gesamtumfang der im Vertrag vorgesehenen
+              Dienstleistungen.
             </p>
             <p className="text-soft-gray leading-relaxed">
               Kein Widerrufsrecht besteht bei digitalen Inhalten (z. B. individuell erstellten
-              Ernährungsplänen), die bereits vollständig übermittelt wurden und deren Übermittlung die
-              Kundin ausdrücklich zugestimmt hat.
+              Ernährungsplänen), die bereits vollständig übermittelt wurden und deren Übermittlung du
+              ausdrücklich zugestimmt hast.
             </p>
+
+            <p className="text-soft-gray font-semibold mb-2 mt-6">Muster-Widerrufsformular</p>
+            <div className="bg-white border border-sage-light rounded-card p-5 text-soft-gray text-sm leading-relaxed">
+              <p className="mb-3 text-xs text-soft-gray/70">
+                (Wenn du den Vertrag widerrufen möchtest, fülle bitte dieses Formular aus und sende es zurück.)
+              </p>
+              <p className="mb-1">An:</p>
+              <p className="mb-3">
+                Christin Schoß<br />
+                Hagenring 89<br />
+                38106 Braunschweig<br />
+                E-Mail: hallo@christinschoss.de
+              </p>
+              <p className="mb-3">
+                Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die Erbringung der
+                folgenden Dienstleistung:
+              </p>
+              <p className="mb-1">Bestellt am: ___________________________</p>
+              <p className="mb-1">Name: ___________________________</p>
+              <p className="mb-1">Anschrift: ___________________________</p>
+              <p className="mb-3">Datum: ___________________________</p>
+              <p className="text-xs text-soft-gray/70">
+                Der Widerruf kann auch formlos per E-Mail an hallo@christinschoss.de erklärt werden.
+              </p>
+            </div>
           </div>
 
           <div>

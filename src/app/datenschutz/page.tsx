@@ -181,18 +181,55 @@ export default function DatenschutzPage() {
           <div>
             <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">9. Externe Links (Social Media)</h2>
             <p>
-              Diese Website enthält einfache Links zu Instagram (Meta Platforms Ireland Ltd.) und
-              TikTok (TikTok Technology Ltd., Irland). Es handelt sich um reine Hyperlinks ohne
-              eingebettete Plugins oder Tracking-Pixel. Eine Datenübertragung an die Plattformen
-              findet erst statt, wenn du aktiv auf einen Link klickst. Auf die dortige
-              Datenverarbeitung habe ich keinen Einfluss. Es gelten die jeweiligen
-              Datenschutzbestimmungen der Plattformen.
+              Diese Website enthält einfache Links zu Instagram (Meta Platforms Ireland Ltd.),
+              TikTok (TikTok Technology Ltd., Irland) und YouTube (Google Ireland Ltd., Gordon House,
+              Barrow Street, Dublin 4, Irland). Es handelt sich um reine Hyperlinks ohne eingebettete
+              Plugins oder Tracking-Pixel. Eine Datenübertragung an die Plattformen findet erst statt,
+              wenn du aktiv auf einen Link klickst. Auf die dortige Datenverarbeitung habe ich keinen
+              Einfluss. Es gelten die jeweiligen Datenschutzbestimmungen der Plattformen.
             </p>
           </div>
 
-          {/* 10. Betroffenenrechte */}
+          {/* 10. Speicherdauer */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">10. Deine Rechte</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">10. Speicherdauer</h2>
+            <p className="mb-2">
+              Ich speichere personenbezogene Daten nur so lange, wie es für den jeweiligen Zweck
+              erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen:
+            </p>
+            <ul className="list-disc pl-5 space-y-2 mt-2">
+              <li>
+                <strong>Server-Logfiles (ALL-INKL.COM):</strong> In der Regel bis zu 30 Tage, danach
+                automatische Löschung.
+              </li>
+              <li>
+                <strong>Kontaktformular-Nachrichten:</strong> Bis zur abschließenden Bearbeitung deiner
+                Anfrage, längstens 3 Jahre (zivilrechtliche Verjährungsfrist).
+              </li>
+              <li>
+                <strong>Buchungsdaten (Calendly):</strong> Gemäß der Datenschutzrichtlinie von Calendly,
+                in der Regel bis zur Löschung des Termins oder auf Anfrage.
+              </li>
+              <li>
+                <strong>Zahlungsdaten (Stripe):</strong> Gemäß der Datenschutzrichtlinie von Stripe.
+                Steuerrelevante Zahlungsbelege unterliegen einer gesetzlichen Aufbewahrungspflicht
+                von 10 Jahren (§ 147 AO, § 257 HGB).
+              </li>
+              <li>
+                <strong>Beratungsdaten (Gesundheitsdaten):</strong> Für die Dauer der Beratung sowie
+                bis zu 3 Jahre danach (zivilrechtliche Verjährungsfrist), sofern keine kürzere
+                Aufbewahrung möglich ist.
+              </li>
+              <li>
+                <strong>Cookie-Einstellungen (localStorage):</strong> Bis zur manuellen Löschung durch
+                dich im Browser.
+              </li>
+            </ul>
+          </div>
+
+          {/* 11. Betroffenenrechte */}
+          <div>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">11. Deine Rechte</h2>
             <p className="mb-3">
               Dir stehen gegenüber mir als Verantwortlicher folgende Rechte zu:
             </p>
@@ -210,9 +247,9 @@ export default function DatenschutzPage() {
             </p>
           </div>
 
-          {/* 11. Beschwerderecht */}
+          {/* 12. Beschwerderecht */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">11. Beschwerderecht bei der Aufsichtsbehörde</h2>
+            <h2 className="font-serif text-xl font-semibold text-charcoal mb-3">12. Beschwerderecht bei der Aufsichtsbehörde</h2>
             <p>
               Du hast das Recht, dich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.
               Zuständig ist der Landesbeauftragte für den Datenschutz Niedersachsen:
