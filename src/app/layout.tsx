@@ -40,9 +40,18 @@ export const metadata: Metadata = {
     locale: "de_DE",
     url: "https://christinschoss.de",
     siteName: "Christin Schoß – Vegane Ernährungsberatung",
+    images: [
+      {
+        url: "https://christinschoss.de/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Christin Schoß – Vegane Ernährungsberaterin für Schwangerschaft & Beikost",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["https://christinschoss.de/og-image.png"],
   },
   robots: {
     index: true,
