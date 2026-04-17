@@ -21,7 +21,7 @@ export default function DatenschutzPage() {
               Hagenring 89<br />
               38106 Braunschweig<br />
               Deutschland<br />
-              E-Mail: hallo@christinschoss.de
+              E-Mail: info@christinschoss.com
             </p>
           </div>
 
@@ -231,7 +231,7 @@ export default function DatenschutzPage() {
               <li>Recht auf Widerruf einer erteilten Einwilligung (Art. 7 Abs. 3 DSGVO)</li>
             </ul>
             <p className="mt-3">
-              Zur Geltendmachung deiner Rechte wende dich bitte an: hallo@christinschoss.de
+              Zur Geltendmachung deiner Rechte wende dich bitte an: info@christinschoss.com
             </p>
           </div>
 

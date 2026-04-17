@@ -100,7 +100,7 @@ export default function AGBPage() {
             </p>
             <p className="text-soft-gray leading-relaxed mb-2">
               Um dein Widerrufsrecht auszuüben, musst du mich (Christin Schoß, Hagenring 89, 38106
-              Braunschweig, E-Mail: hallo@christinschoss.de) mittels einer eindeutigen Erklärung (z. B.
+              Braunschweig, E-Mail: info@christinschoss.com) mittels einer eindeutigen Erklärung (z. B.
               per E-Mail) über deinen Entschluss, diesen Vertrag zu widerrufen, informieren. Du kannst
               dafür das nachstehende Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben
               ist. Zur Wahrung der Widerrufsfrist reicht es aus, dass du die Mitteilung vor Ablauf der
@@ -146,7 +146,7 @@ export default function AGBPage() {
                 Christin Schoß<br />
                 Hagenring 89<br />
                 38106 Braunschweig<br />
-                E-Mail: hallo@christinschoss.de
+                E-Mail: info@christinschoss.com
               </p>
               <p className="mb-3">
                 Hiermit widerrufe ich den von mir abgeschlossenen Vertrag über die Erbringung der
@@ -157,7 +157,7 @@ export default function AGBPage() {
               <p className="mb-1">Anschrift: ___________________________</p>
               <p className="mb-3">Datum: ___________________________</p>
               <p className="text-xs text-soft-gray/70">
-                Der Widerruf kann auch formlos per E-Mail an hallo@christinschoss.de erklärt werden.
+                Der Widerruf kann auch formlos per E-Mail an info@christinschoss.com erklärt werden.
               </p>
             </div>
           </div>
@@ -327,7 +327,7 @@ export default function AGBPage() {
               >
                 https://ec.europa.eu/consumers/odr/
               </a>
-              . Die E-Mail-Adresse der Anbieterin lautet: hallo@christinschoss.de.
+              . Die E-Mail-Adresse der Anbieterin lautet: info@christinschoss.com.
             </p>
             <p className="text-soft-gray leading-relaxed">
               Die Anbieterin ist nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor

@@ -64,7 +64,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Christin Schoß – Vegane Ernährungsberatung",
   url: "https://christinschoss.de",
-  email: "hallo@christinschoss.de",
+  email: "info@christinschoss.com",
   description:
     "Zertifizierte vegane Ernährungsberaterin für Schwangerschaft, Stillzeit und Beikost",
   sameAs: [
