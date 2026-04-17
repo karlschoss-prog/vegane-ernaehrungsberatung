@@ -21,10 +21,10 @@ export const AFFILIATE = {
 };
 
 export const STRIPE = {
-  schwangerschaft: "#",       // Platzhalter – wird nachgereicht
-  schwangerschaftRate: "#",   // Platzhalter – wird nachgereicht
-  beikost: "#",               // Platzhalter – wird nachgereicht
-  beikostRate: "#",           // Platzhalter – wird nachgereicht
+  schwangerschaft: "https://buy.stripe.com/7sY00j7dhghLfbqe5ddIA00",
+  schwangerschaftRate: "https://buy.stripe.com/bJe7sL0OT0iN1kA6CLdIA02",
+  beikost: "https://buy.stripe.com/6oU3cv7dh3uZfbq6CLdIA01",
+  beikostRate: "https://buy.stripe.com/eVqeVdbtxd5ze7me5ddIA03",
 };
 
 export const PROGRAMS = {
