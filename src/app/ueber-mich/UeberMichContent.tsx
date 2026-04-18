@@ -243,6 +243,15 @@ export default function UeberMichContent() {
                 </a>
                 .
               </p>
+              <p>
+                Neugierig auf Ringana? Als Neukunde bekommst du über mich 20 € Rabatt.{" "}
+                <Link
+                  href="/kontakt#schreib-mir"
+                  className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
+                >
+                  Schreib mir einfach kurz.
+                </Link>
+              </p>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="bg-white rounded-card-lg p-6 border border-sage-light shadow-sm mb-8">
