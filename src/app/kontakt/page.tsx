@@ -253,7 +253,7 @@ export default function KontaktPage() {
               </motion.p>
               <motion.a
                 variants={fadeInUp}
-                href={`mailto:${SITE.email}?subject=Anfrage%20%E2%80%93%20christinschoss.de`}
+                href={`mailto:${SITE.email}?subject=Anfrage%20%E2%80%93%20christinschoss.com`}
                 className="inline-flex items-center gap-3 px-6 py-4 bg-sage text-white font-semibold rounded-card hover:bg-sage-dark transition-colors"
               >
                 <svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

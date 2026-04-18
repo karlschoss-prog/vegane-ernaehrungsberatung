@@ -28,7 +28,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://christinschoss.de"),
+  metadataBase: new URL("https://christinschoss.com"),
   title: {
     default: "Vegane Ernährungsberatung für Schwangerschaft & Beikost | Christin Schoß",
     template: "%s | Christin Schoß",
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "de_DE",
-    url: "https://christinschoss.de",
+    url: "https://christinschoss.com",
     siteName: "Christin Schoß – Vegane Ernährungsberatung",
     images: [
       {
-        url: "https://christinschoss.de/og-image.png",
+        url: "https://christinschoss.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Christin Schoß – Vegane Ernährungsberaterin für Schwangerschaft & Beikost",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://christinschoss.de/og-image.png"],
+    images: ["https://christinschoss.com/og-image.png"],
   },
   robots: {
     index: true,
@@ -63,7 +63,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Christin Schoß – Vegane Ernährungsberatung",
-  url: "https://christinschoss.de",
+  url: "https://christinschoss.com",
   email: "info@christinschoss.com",
   description:
     "Zertifizierte vegane Ernährungsberaterin für Schwangerschaft, Stillzeit und Beikost",

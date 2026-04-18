@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Vegan schwanger? Christin Schoß begleitet dich mit individueller 1:1-Beratung durch Schwangerschaft, Stillzeit und Beikoststart – sicher, fundiert, persönlich.",
   alternates: {
-    canonical: "https://christinschoss.de",
+    canonical: "https://christinschoss.com",
   },
 };
 

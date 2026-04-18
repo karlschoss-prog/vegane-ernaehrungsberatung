@@ -1,7 +1,7 @@
 export const SITE = {
   name: "Christin Schoß",
   tagline: "Zertifizierte vegane Ernährungsberatung",
-  url: "https://christinschoss.de",
+  url: "https://christinschoss.com",
   email: "info@christinschoss.com",
   calendly: "https://calendly.com/christinschoss/kostenloses_kennlerngespraech",
   instagram: "https://www.instagram.com/tinboom.official/",

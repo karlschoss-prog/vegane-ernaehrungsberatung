@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/impressum", "/datenschutz", "/agb"],
     },
-    sitemap: "https://christinschoss.de/sitemap.xml",
+    sitemap: "https://christinschoss.com/sitemap.xml",
   };
 }
