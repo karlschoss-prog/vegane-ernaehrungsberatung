@@ -249,7 +249,7 @@ export default function UeberMichContent() {
                   href="/kontakt#schreib-mir"
                   className="text-sage-dark underline underline-offset-2 hover:text-sage transition-colors"
                 >
-                  Schreib mir einfach kurz.
+                  Sprich mich gerne darauf an.
                 </Link>
               </p>
             </motion.div>
