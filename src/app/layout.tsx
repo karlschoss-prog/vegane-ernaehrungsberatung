@@ -59,19 +59,53 @@ export const metadata: Metadata = {
   },
 };
 
-const localBusinessSchema = {
+const professionalServiceSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
   name: "Christin Schoß – Vegane Ernährungsberatung",
-  url: "https://christinschoss.com",
-  email: "info@christinschoss.com",
   description:
-    "Zertifizierte vegane Ernährungsberaterin für Schwangerschaft, Stillzeit und Beikost",
+    "Zertifizierte vegane Ernährungsberatung für Schwangerschaft, Stillzeit und Beikost.",
+  url: "https://christinschoss.com",
+  image: "https://christinschoss.com/christin.jpg",
+  telephone: "+491784558828",
+  email: "info@christinschoss.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Hagenring 89",
+    postalCode: "38106",
+    addressLocality: "Braunschweig",
+    addressRegion: "Niedersachsen",
+    addressCountry: "DE",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "52.2689",
+    longitude: "10.5268",
+  },
+  areaServed: [{ "@type": "Country", name: "Deutschland" }],
+  serviceType: [
+    "Vegane Ernährungsberatung",
+    "Ernährungsberatung Schwangerschaft",
+    "Beikostberatung",
+  ],
+  priceRange: "€€",
   sameAs: [
     "https://www.instagram.com/tinboom.official/",
     "https://www.tiktok.com/@ernaehrung.by.tinboom",
     "https://www.youtube.com/@tins_ernährungstipps",
   ],
+  founder: {
+    "@type": "Person",
+    name: "Christin Schoß",
+    jobTitle: "Zertifizierte vegane Ernährungsberaterin",
+    description:
+      "Zertifizierte vegane Ernährungsberaterin (ecodemy, DQR 5), Mama und Expertin für pflanzliche Ernährung in Schwangerschaft, Stillzeit und Beikost.",
+    image: "https://christinschoss.com/christin.jpg",
+    sameAs: [
+      "https://www.instagram.com/tinboom.official/",
+      "https://www.tiktok.com/@ernaehrung.by.tinboom",
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -87,7 +121,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-cream text-charcoal font-sans antialiased">
