@@ -124,7 +124,7 @@ export default function Hero() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/vegane-ernaehrungsberatung/christin.jpg"
+                  src="/christin.jpg"
                   alt="Christin Schoß – Zertifizierte vegane Ernährungsberaterin"
                   className="w-full h-full object-cover object-top"
                 />

@@ -29,9 +29,9 @@ export default function AboutTeaser() {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/vegane-ernaehrungsberatung/christin.jpg"
+                src="/christin-ueber-mich.jpeg"
                 alt="Christin Schoß – Zertifizierte vegane Ernährungsberaterin"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </motion.div>

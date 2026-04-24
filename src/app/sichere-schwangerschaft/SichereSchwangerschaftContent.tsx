@@ -111,17 +111,7 @@ export default function SichereSchwangerschaftContent() {
               <Button href={SITE.calendly} size="lg" external className="whitespace-nowrap">
                 Kostenloses Erstgespräch buchen
               </Button>
-              <Button href={STRIPE.schwangerschaft} variant="ghost" size="lg" className="whitespace-nowrap">
-                Direkt buchen
-              </Button>
             </motion.div>
-            <motion.p variants={fadeInUp} className="mt-4 text-xs text-soft-gray/70">
-              Mit der Buchung akzeptierst du meine{" "}
-              <Link href="/agb" className="underline underline-offset-2 hover:text-charcoal transition-colors">
-                AGB
-              </Link>
-              .
-            </motion.p>
           </motion.div>
         </div>
       </section>
@@ -249,7 +239,7 @@ export default function SichereSchwangerschaftContent() {
                 href={STRIPE.schwangerschaft}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative bg-white/15 border border-white/30 rounded-2xl p-6 hover:bg-white/20 transition-colors cursor-pointer"
+                className="relative bg-white/15 border border-white/30 rounded-2xl p-6 hover:bg-white/20 transition-colors cursor-pointer group"
               >
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-taupe text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">
                   Beste Wahl
@@ -257,17 +247,19 @@ export default function SichereSchwangerschaftContent() {
                 <p className="text-white/60 text-sm mb-2">Einmalzahlung</p>
                 <p className="font-serif text-5xl font-semibold mb-1">1.497 €</p>
                 <p className="text-white/50 text-xs">einmalig</p>
+                <p className="text-white/50 text-xs mt-3 group-hover:text-white/80 transition-colors">→ Jetzt buchen</p>
               </a>
               <a
                 href={STRIPE.schwangerschaftRate}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/8 border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-colors cursor-pointer"
+                className="bg-white/8 border border-white/15 rounded-2xl p-6 hover:bg-white/15 transition-colors cursor-pointer group"
               >
                 <p className="text-white/60 text-sm mb-2">Ratenzahlung</p>
                 <p className="text-white/50 text-xs mb-1">3 Raten à</p>
                 <p className="font-serif text-5xl font-semibold mb-1">529 €</p>
                 <p className="text-white/50 text-xs">monatlich</p>
+                <p className="text-white/50 text-xs mt-3 group-hover:text-white/80 transition-colors">→ Jetzt buchen</p>
               </a>
             </motion.div>
 
@@ -303,14 +295,6 @@ export default function SichereSchwangerschaftContent() {
                 className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg bg-white text-sage-dark hover:bg-cream whitespace-nowrap"
               >
                 Kostenloses Erstgespräch buchen
-              </a>
-              <a
-                href={STRIPE.schwangerschaft}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-8 py-4 text-base rounded-card-lg border-2 border-white text-white hover:bg-white/10"
-              >
-                Direkt buchen
               </a>
             </motion.div>
 

@@ -170,7 +170,7 @@ Werden automatisch durch Next.js generiert (`sitemap.ts`, `robots.ts`). Beide Da
 
 ### Sofort umsetzbar
 
-- **og-image.png erstellen** (1200 × 630 px): Christins Foto + Name + Claim. In `public/` ablegen. Wird für WhatsApp-Links, Instagram-Posts und Google-Vorschauen genutzt. Die Metadaten verweisen bereits auf `https://christinschoss.com/og-image.png`.
+- ~~**og-image.png erstellen**~~ ✓ Erledigt. Liegt in `public/og-image.png`. Generiert via `scripts/generate-og-image.mjs` (Node.js + @napi-rs/canvas). Enthält: Foto, Name, Tagline, christinschoss.com + @tinboom.official.
 
 - **basePath auf `""` setzen** (sobald Hosting auf christinschoss.com läuft): Siehe Kritischer Punkt oben.
 
@@ -184,7 +184,6 @@ Werden automatisch durch Next.js generiert (`sitemap.ts`, `robots.ts`). Beide Da
 
 - **USt-IdNr.** im Impressum nachtragen (kommt automatisch vom Finanzamt)
 - **Testimonials** durch echte Kundenstimmen ersetzen (dann auch Review-Schema ergänzen)
-- **Ringana-Affiliate-Link** aktivieren wenn Christin Partnerprogramm beantragt
 - **Google Analytics 4** einbinden wenn Tracking gewünscht (erfordert Cookie-Consent-Anpassung)
 - **Demnächst-Programme** (Sicher stillen, Vegan & leicht) aufbauen wenn bereit
 

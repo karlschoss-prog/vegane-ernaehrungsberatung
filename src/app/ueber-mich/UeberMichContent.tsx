@@ -62,9 +62,9 @@ export default function UeberMichContent() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`${process.env.NEXT_PUBLIC_BASE_PATH}/christin.jpg`}
+                  src="/christin-ueber-mich.jpeg"
                   alt="Christin Schoß – Zertifizierte vegane Ernährungsberaterin aus Braunschweig"
-                  className="object-cover object-top w-full h-full"
+                  className="object-cover object-center w-full h-full"
                 />
               </div>
             </motion.div>

@@ -2,11 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/vegane-ernaehrungsberatung",
+  basePath: "",
   trailingSlash: true,
   images: { unoptimized: true },
   env: {
-    NEXT_PUBLIC_BASE_PATH: "/vegane-ernaehrungsberatung",
+    NEXT_PUBLIC_BASE_PATH: "",
   },
 };
 
