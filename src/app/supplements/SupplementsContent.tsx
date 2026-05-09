@@ -72,17 +72,17 @@ const products = [
     items: [
       {
         name: "Vegan Pregnancy All In One Bundle",
-        desc: "Das Komplett-Paket für eine Rundumversorgung: enthält zusätzlich Omega-3-Kapseln, Cholin und Calcium.",
+        desc: "Das Komplett-Paket für eine Rundumversorgung: enthält zusätzlich Omega-3-Kapseln, Cholin-Kapseln und Calcium.",
         note: null,
         link: "https://watsonnutrition.de/products/pregnancy-all-in-one?ref=CHRISTINSCHO",
         linkLabel: "Watson Nutrition – Vegan Pregnancy Bundle *",
       },
       {
-        name: "Cholin (Lecithin)",
+        name: "Cholin-Kapseln",
         desc: "Essenziell für die Gehirn- und Nervenentwicklung deines Babys und einer der am häufigsten unterschätzten Nährstoffe. 93 % der Schwangeren erreichen die empfohlene Cholinzufuhr nicht.",
         note: null,
-        link: "https://watsonnutrition.de/products/lecithin?ref=CHRISTINSCHO",
-        linkLabel: "Watson Nutrition – Cholin *",
+        link: "https://watsonnutrition.de/products/cholin-kapseln?ref=CHRISTINSCHO",
+        linkLabel: "Watson Nutrition – Cholin-Kapseln *",
       },
       {
         name: "Calcium-Kapseln",
@@ -125,11 +125,11 @@ const products = [
         linkLabel: "Watson Nutrition – Stillzeit All In One *",
       },
       {
-        name: "Cholin (Lecithin)",
+        name: "Cholin-Kapseln",
         desc: "Cholin wird über die Muttermilch an dein Baby weitergegeben und bleibt in der Stillzeit ein wichtiger Nährstoff für die Gehirn- und Nervenentwicklung. Auch der Bedarf der stillenden Mutter bleibt erhöht.",
         note: null,
-        link: "https://watsonnutrition.de/products/lecithin?ref=CHRISTINSCHO",
-        linkLabel: "Watson Nutrition – Cholin *",
+        link: "https://watsonnutrition.de/products/cholin-kapseln?ref=CHRISTINSCHO",
+        linkLabel: "Watson Nutrition – Cholin-Kapseln *",
       },
       {
         name: "Collasyn oder Monoglycin",

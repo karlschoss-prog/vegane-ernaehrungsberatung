@@ -48,11 +48,29 @@ export const PROGRAMS = {
     shortDescription:
       "10 Wochen individuelle Begleitung für den veganen Beikoststart. Damit dein Kind von Anfang an optimal versorgt ist.",
   },
+  pflanzlichInForm: {
+    title: "Pflanzlich in Form",
+    slug: "/pflanzlich-in-form",
+    duration: "10–12 Wochen",
+    price: "ab 249 €",
+    shortDescription:
+      "Pflanzlich abnehmen oder gesund zunehmen: Dein individueller Plan für deinen Körper und deinen Alltag als Mama.",
+  },
 };
 
-export const NAV_LINKS = [
-  { label: "Sichere Schwangerschaft", href: "/sichere-schwangerschaft" },
-  { label: "Sicherer Beikoststart", href: "/sicherer-beikoststart" },
+export type NavLink = { label: string; href: string; children?: { label: string; href: string }[] };
+
+export const NAV_LINKS: NavLink[] = [
+  {
+    label: "Leistungen",
+    href: "/#programme",
+    children: [
+      { label: "Sichere Schwangerschaft", href: "/sichere-schwangerschaft" },
+      { label: "Sicherer Beikoststart", href: "/sicherer-beikoststart" },
+      { label: "Pflanzlich in Form", href: "/pflanzlich-in-form" },
+      { label: "Unverträglichkeiten", href: "/kontakt#schreib-mir" },
+    ],
+  },
   { label: "Supplements", href: "/supplements" },
   { label: "Über mich", href: "/ueber-mich" },
 ];

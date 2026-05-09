@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { motion, useReducedMotion } from "framer-motion";
-import { Calendar, Check, Timer } from "lucide-react";
+import { ArrowRight, Calendar, Check, Timer } from "lucide-react";
 
 function InstagramIcon({ size = 18 }: { size?: number }) {
   return (
@@ -196,24 +196,27 @@ export default function KontaktContent() {
                   </Link>
                 </div>
               </div>
-              <div className="relative bg-white/60 rounded-card-lg p-6 border border-blush/30 overflow-hidden">
-                <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" aria-hidden="true" />
-                <div className="relative">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blush/30 text-taupe text-xs font-semibold rounded-full mb-3">
-                    <Timer size={11} />
-                    Demnächst verfügbar
-                  </span>
-                  <h3 className="font-serif text-xl font-semibold text-charcoal/60 mb-2">Vegan & leicht</h3>
-                  <p className="text-xs text-soft-gray/80 leading-relaxed mb-4">
-                    Vegan abnehmen nach der Schwangerschaft, nachhaltig, ohne Verzicht und mit einem Plan, der in deinen Alltag als Mama passt.
-                  </p>
-                  <Link
-                    href="#schreib-mir"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-taupe/70 hover:text-taupe transition-colors"
-                  >
-                    Auf Warteliste eintragen
-                  </Link>
-                </div>
+              <div className="bg-blush/20 rounded-card-lg p-6 border border-blush/40 shadow-sm hover:shadow-xl hover:border-taupe/60 hover:-translate-y-1 transition-all duration-200">
+                <h3 className="font-serif text-xl font-semibold text-charcoal mb-1">Pflanzlich in Form</h3>
+                <p className="text-soft-gray text-sm mb-3">ab 249 €</p>
+                <ul className="space-y-1.5 mb-4">
+                  {[
+                    "Schlank & energiegeladen: Fett verlieren, Heißhunger lösen",
+                    "Gesund zunehmen: pflanzlich & ohne Bauchfett",
+                    "Individueller Plan, Rezepte & WhatsApp-Support",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-xs text-soft-gray">
+                      <Check size={13} className="text-taupe flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="#schreib-mir"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-taupe hover:text-charcoal transition-colors"
+                >
+                  Jetzt anfragen <ArrowRight size={13} />
+                </Link>
               </div>
             </div>
 

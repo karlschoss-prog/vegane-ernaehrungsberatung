@@ -111,7 +111,60 @@ export default function ProgramCards() {
 
           {/* Coming Soon Programs */}
           <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto mt-6">
-            {/* Coming Soon 1: Sicher stillen */}
+            {/* Active: Pflanzlich in Form */}
+            <Link
+              href="/pflanzlich-in-form"
+              className="block bg-blush/20 rounded-card-lg p-7 shadow-sm border border-blush/40 hover:shadow-xl hover:border-taupe/60 hover:-translate-y-1 transition-all duration-200 group"
+            >
+              <div className="flex items-center gap-2 mb-4">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blush/40 text-taupe text-xs font-semibold rounded-full">
+                  <Clock size={12} />
+                  10–12 Wochen
+                </span>
+              </div>
+              <h3 className="font-serif text-2xl font-semibold text-charcoal mb-3">
+                Pflanzlich in Form
+              </h3>
+
+              <p className="text-xs font-semibold text-taupe uppercase tracking-wide mb-2">Schlank &amp; energiegeladen</p>
+              <ul className="space-y-1.5 mb-3">
+                {[
+                  "Fett verlieren, Heißhunger nachhaltig lösen",
+                  "Einfach umsetzbar im Mama-Alltag",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-soft-gray">
+                    <Check size={14} className="text-taupe flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <hr className="border-blush/40 my-3" />
+
+              <p className="text-xs font-semibold text-taupe uppercase tracking-wide mb-2">Gesund zunehmen</p>
+              <ul className="space-y-1.5 mb-5">
+                {[
+                  "Zunehmen ohne Bauchfett, pflanzlich & nachhaltig",
+                  "Muskelaufbau und mehr Energie im Alltag",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-soft-gray">
+                    <Check size={14} className="text-taupe flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mb-6">
+                <span className="font-serif text-3xl font-semibold text-taupe">
+                  ab 249 €
+                </span>
+              </div>
+              <span className="inline-flex items-center gap-2 text-sm font-semibold text-taupe group-hover:gap-3 transition-all">
+                Mehr erfahren <ArrowRight size={16} />
+              </span>
+            </Link>
+
+            {/* Coming Soon: Unverträglichkeiten */}
             <div className="relative bg-white/60 rounded-card-lg p-7 border border-sage-light/50 overflow-hidden">
               <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" aria-hidden="true" />
               <div className="relative">
@@ -122,39 +175,14 @@ export default function ProgramCards() {
                   </span>
                 </div>
                 <h3 className="font-serif text-2xl font-semibold text-charcoal/60 mb-3">
-                  Sicher stillen
+                  Unverträglichkeiten
                 </h3>
                 <p className="text-sm text-soft-gray/80 leading-relaxed mb-5">
-                  Vegane Ernährung in der Stillzeit: optimal versorgt trotz erhöhtem Kalorienbedarf, weniger Heißhunger und mehr Energie für dich und dein Baby.
+                  Vegane Ernährung trotz Unverträglichkeiten: individuell angepasst, nährstoffsicher und alltagstauglich für dich und deine Familie.
                 </p>
                 <Link
                   href="/kontakt#schreib-mir"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-sage-dark/70 hover:text-sage-dark hover:gap-3 transition-all"
-                >
-                  Auf Warteliste eintragen <ArrowRight size={16} />
-                </Link>
-              </div>
-            </div>
-
-            {/* Coming Soon 2: Vegan & leicht */}
-            <div className="relative bg-white/60 rounded-card-lg p-7 border border-blush/30 overflow-hidden">
-              <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" aria-hidden="true" />
-              <div className="relative">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-blush/30 text-taupe text-xs font-semibold rounded-full">
-                    <Timer size={12} />
-                    Demnächst verfügbar
-                  </span>
-                </div>
-                <h3 className="font-serif text-2xl font-semibold text-charcoal/60 mb-3">
-                  Vegan & leicht
-                </h3>
-                <p className="text-sm text-soft-gray/80 leading-relaxed mb-5">
-                  Vegan abnehmen nach der Schwangerschaft, nachhaltig, ohne Verzicht und mit einem Plan, der in deinen Alltag als Mama passt.
-                </p>
-                <Link
-                  href="/kontakt#schreib-mir"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-taupe/70 hover:text-taupe hover:gap-3 transition-all"
                 >
                   Auf Warteliste eintragen <ArrowRight size={16} />
                 </Link>

@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NAV_LINKS, SITE } from "@/lib/constants";
 import { drawerSlideIn } from "@/lib/animations";
@@ -11,7 +11,10 @@ import { drawerSlideIn } from "@/lib/animations";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [leistungenExpanded, setLeistungenExpanded] = useState(false);
   const pathname = usePathname();
+  const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
@@ -31,6 +34,19 @@ export default function Header() {
     }
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
+
+  const handleDropdownEnter = () => {
+    if (dropdownTimeout.current) clearTimeout(dropdownTimeout.current);
+    setDropdownOpen(true);
+  };
+
+  const handleDropdownLeave = () => {
+    dropdownTimeout.current = setTimeout(() => setDropdownOpen(false), 150);
+  };
+
+  const leistungenLink = NAV_LINKS.find((l) => l.children);
+  const regularLinks = NAV_LINKS.filter((l) => !l.children);
+  const isLeistungenActive = leistungenLink?.children?.some((c) => pathname === c.href);
 
   return (
     <>
@@ -57,7 +73,55 @@ export default function Header() {
 
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-7">
-              {NAV_LINKS.map((link) => (
+              {/* Leistungen Dropdown */}
+              {leistungenLink && (
+                <div
+                  className="relative"
+                  onMouseEnter={handleDropdownEnter}
+                  onMouseLeave={handleDropdownLeave}
+                >
+                  <Link
+                    href="/#programme"
+                    className={`text-sm font-medium transition-colors hover:text-sage-dark flex items-center gap-1 relative after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-sage after:transition-all after:w-0 hover:after:w-full ${
+                      isLeistungenActive ? "text-sage-dark" : "text-charcoal"
+                    }`}
+                  >
+                    {leistungenLink.label}
+                    <ChevronDown
+                      size={14}
+                      className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`}
+                    />
+                  </Link>
+                  <AnimatePresence>
+                    {dropdownOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.15 }}
+                        className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-60 bg-cream rounded-card-lg shadow-xl border border-sage-light overflow-hidden"
+                      >
+                        {leistungenLink.children!.map((child) => (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            className={`block px-4 py-3 text-sm transition-colors hover:bg-sage-light/60 hover:text-sage-dark border-b border-sage-light/40 last:border-0 ${
+                              pathname === child.href
+                                ? "text-sage-dark font-semibold bg-sage-light/30"
+                                : "text-charcoal"
+                            }`}
+                          >
+                            {child.label}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+
+              {/* Regular links */}
+              {regularLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -122,14 +186,65 @@ export default function Header() {
                   <X size={22} />
                 </button>
               </div>
-              <nav className="flex flex-col p-6 gap-1 flex-1">
+              <nav className="flex flex-col p-6 gap-1 flex-1 overflow-y-auto">
                 <Link
                   href="/"
                   className="py-3 px-2 text-base font-medium text-charcoal hover:text-sage-dark border-b border-sage-light/50 transition-colors"
                 >
                   Startseite
                 </Link>
-                {NAV_LINKS.map((link) => (
+
+                {/* Leistungen expandable */}
+                {leistungenLink && (
+                  <>
+                    <div className={`flex items-center justify-between border-b border-sage-light/50 ${isLeistungenActive ? "text-sage-dark" : "text-charcoal"}`}>
+                      <Link
+                        href="/#programme"
+                        className="flex-1 py-3 px-2 text-base font-medium hover:text-sage-dark transition-colors"
+                      >
+                        {leistungenLink.label}
+                      </Link>
+                      <button
+                        onClick={() => setLeistungenExpanded((v) => !v)}
+                        className="p-3 hover:text-sage-dark transition-colors"
+                        aria-label="Leistungen aufklappen"
+                      >
+                        <ChevronDown
+                          size={16}
+                          className={`transition-transform duration-200 ${leistungenExpanded ? "rotate-180" : ""}`}
+                        />
+                      </button>
+                    </div>
+                    <AnimatePresence initial={false}>
+                      {leistungenExpanded && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden"
+                        >
+                          {leistungenLink.children!.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className={`block py-2.5 pl-6 pr-2 text-sm border-b border-sage-light/30 transition-colors ${
+                                pathname === child.href
+                                  ? "text-sage-dark font-semibold"
+                                  : "text-soft-gray hover:text-sage-dark"
+                              }`}
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </>
+                )}
+
+                {/* Regular links */}
+                {regularLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}

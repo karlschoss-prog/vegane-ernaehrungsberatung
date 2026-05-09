@@ -32,6 +32,7 @@ function YouTubeIcon({ size = 18 }: { size?: number }) {
 
 export default function Footer() {
   return (
+    <>
     <footer className="bg-charcoal text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
@@ -152,5 +153,23 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+
+    {/* seitenreif credit bar */}
+    <div style={{ backgroundColor: "#1A1A18" }} className="w-full py-4 px-4">
+      <div className="max-w-6xl mx-auto flex flex-col items-center gap-1">
+        <span style={{ color: "rgba(255,255,255,0.30)", fontFamily: "DM Sans, sans-serif" }} className="text-[10px] uppercase tracking-widest">
+          Website erstellt von
+        </span>
+        <a
+          href="https://www.seitenreif.de"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-serif text-lg leading-none hover:opacity-75 transition-opacity"
+        >
+          <span style={{ color: "#FFFFFF" }}>seiten</span><span style={{ color: "#2A9D7C" }}>reif</span><span style={{ color: "rgba(255,255,255,0.35)", fontSize: "0.75em" }}>.de</span>
+        </a>
+      </div>
+    </div>
+    </>
   );
 }
