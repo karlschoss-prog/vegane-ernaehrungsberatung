@@ -12,7 +12,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [leistungenExpanded, setLeistungenExpanded] = useState(false);
+  const [programmeExpanded, setProgrammeExpanded] = useState(false);
   const pathname = usePathname();
   const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -44,9 +44,9 @@ export default function Header() {
     dropdownTimeout.current = setTimeout(() => setDropdownOpen(false), 150);
   };
 
-  const leistungenLink = NAV_LINKS.find((l) => l.children);
+  const programmeLink = NAV_LINKS.find((l) => l.children);
   const regularLinks = NAV_LINKS.filter((l) => !l.children);
-  const isLeistungenActive = leistungenLink?.children?.some((c) => pathname === c.href);
+  const isProgrammeActive = programmeLink?.children?.some((c) => pathname === c.href);
 
   return (
     <>
@@ -74,7 +74,7 @@ export default function Header() {
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-7">
               {/* Leistungen Dropdown */}
-              {leistungenLink && (
+              {programmeLink && (
                 <div
                   className="relative"
                   onMouseEnter={handleDropdownEnter}
@@ -83,10 +83,10 @@ export default function Header() {
                   <Link
                     href="/#programme"
                     className={`text-sm font-medium transition-colors hover:text-sage-dark flex items-center gap-1 relative after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-sage after:transition-all after:w-0 hover:after:w-full ${
-                      isLeistungenActive ? "text-sage-dark" : "text-charcoal"
+                      isProgrammeActive ? "text-sage-dark" : "text-charcoal"
                     }`}
                   >
-                    {leistungenLink.label}
+                    {programmeLink.label}
                     <ChevronDown
                       size={14}
                       className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`}
@@ -101,7 +101,7 @@ export default function Header() {
                         transition={{ duration: 0.15 }}
                         className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-60 bg-cream rounded-card-lg shadow-xl border border-sage-light overflow-hidden"
                       >
-                        {leistungenLink.children!.map((child) => (
+                        {programmeLink.children!.map((child) => (
                           <Link
                             key={child.href}
                             href={child.href}
@@ -195,28 +195,28 @@ export default function Header() {
                 </Link>
 
                 {/* Leistungen expandable */}
-                {leistungenLink && (
+                {programmeLink && (
                   <>
-                    <div className={`flex items-center justify-between border-b border-sage-light/50 ${isLeistungenActive ? "text-sage-dark" : "text-charcoal"}`}>
+                    <div className={`flex items-center justify-between border-b border-sage-light/50 ${isProgrammeActive ? "text-sage-dark" : "text-charcoal"}`}>
                       <Link
                         href="/#programme"
                         className="flex-1 py-3 px-2 text-base font-medium hover:text-sage-dark transition-colors"
                       >
-                        {leistungenLink.label}
+                        {programmeLink.label}
                       </Link>
                       <button
-                        onClick={() => setLeistungenExpanded((v) => !v)}
+                        onClick={() => setProgrammeExpanded((v) => !v)}
                         className="p-3 hover:text-sage-dark transition-colors"
-                        aria-label="Leistungen aufklappen"
+                        aria-label="Programme aufklappen"
                       >
                         <ChevronDown
                           size={16}
-                          className={`transition-transform duration-200 ${leistungenExpanded ? "rotate-180" : ""}`}
+                          className={`transition-transform duration-200 ${programmeExpanded ? "rotate-180" : ""}`}
                         />
                       </button>
                     </div>
                     <AnimatePresence initial={false}>
-                      {leistungenExpanded && (
+                      {programmeExpanded && (
                         <motion.div
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: "auto", opacity: 1 }}
@@ -224,7 +224,7 @@ export default function Header() {
                           transition={{ duration: 0.2 }}
                           className="overflow-hidden"
                         >
-                          {leistungenLink.children!.map((child) => (
+                          {programmeLink.children!.map((child) => (
                             <Link
                               key={child.href}
                               href={child.href}

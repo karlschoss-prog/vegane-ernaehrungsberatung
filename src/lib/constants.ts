@@ -62,7 +62,7 @@ export type NavLink = { label: string; href: string; children?: { label: string;
 
 export const NAV_LINKS: NavLink[] = [
   {
-    label: "Leistungen",
+    label: "Programme",
     href: "/#programme",
     children: [
       { label: "Sichere Schwangerschaft", href: "/sichere-schwangerschaft" },

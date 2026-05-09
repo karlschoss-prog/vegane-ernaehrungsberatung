@@ -2,31 +2,8 @@
 
 import { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
-import { Award, Heart, Baby, Users } from "lucide-react";
+import { Heart, Baby, Users } from "lucide-react";
 import { fadeInUp } from "@/lib/animations";
-
-const trustItems = [
-  {
-    icon: Award,
-    title: "Zertifizierte Ernährungsberaterin",
-    sub: "ecodemy · staatlich geprüft · DQR-Niveau 5",
-  },
-  {
-    icon: Heart,
-    title: "Schwangerschaft & Stillzeit",
-    sub: "Fachfortbildung Mutter & Kind",
-  },
-  {
-    icon: Baby,
-    title: "Selbst Mama",
-    sub: "Vegan durch Schwangerschaft und Stillzeit",
-  },
-  {
-    icon: Users,
-    title: "77.000+ Community",
-    sub: "Instagram & TikTok",
-  },
-];
 
 export default function TrustBar() {
   const ref = useRef(null);
@@ -49,18 +26,45 @@ export default function TrustBar() {
           animate={isInView ? "visible" : "hidden"}
           className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8"
         >
-          {trustItems.map((item) => (
-            <div
-              key={item.title}
-              className="flex flex-col items-center text-center"
-            >
-              <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3" style={{ background: "rgba(250,243,227,0.12)", border: "1px solid rgba(250,243,227,0.2)" }}>
-                <item.icon size={22} className="text-blush" strokeWidth={1.5} />
-              </div>
-              <p className="font-semibold text-sm leading-snug" style={{ color: "#FAF3E3" }}>{item.title}</p>
-              <p className="text-xs mt-0.5" style={{ color: "rgba(250,243,227,0.6)" }}>{item.sub}</p>
+          {/* ecodemy Siegel */}
+          <div className="flex flex-col items-center text-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/ecodemy-siegel-ausbildung-vegane-ernaehrungsberaterin-vea-150px-2x.png"
+              alt="ecodemy Siegel – Zertifizierte vegane Ernährungsberaterin"
+              className="mb-2 drop-shadow-md"
+              style={{ height: "64px", width: "auto" }}
+            />
+            <p className="font-semibold text-sm leading-snug" style={{ color: "#FAF3E3" }}>Zertifizierte Ernährungsberaterin</p>
+            <p className="text-xs mt-0.5" style={{ color: "rgba(250,243,227,0.6)" }}>staatlich geprüft · DQR-Niveau 5</p>
+          </div>
+
+          {/* Schwangerschaft & Stillzeit */}
+          <div className="flex flex-col items-center text-center">
+            <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3" style={{ background: "rgba(250,243,227,0.12)", border: "1px solid rgba(250,243,227,0.2)" }}>
+              <Heart size={22} className="text-blush" strokeWidth={1.5} />
             </div>
-          ))}
+            <p className="font-semibold text-sm leading-snug" style={{ color: "#FAF3E3" }}>Schwangerschaft & Stillzeit</p>
+            <p className="text-xs mt-0.5" style={{ color: "rgba(250,243,227,0.6)" }}>Fachfortbildung Mutter & Kind</p>
+          </div>
+
+          {/* Selbst Mama */}
+          <div className="flex flex-col items-center text-center">
+            <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3" style={{ background: "rgba(250,243,227,0.12)", border: "1px solid rgba(250,243,227,0.2)" }}>
+              <Baby size={22} className="text-blush" strokeWidth={1.5} />
+            </div>
+            <p className="font-semibold text-sm leading-snug" style={{ color: "#FAF3E3" }}>Selbst Mama</p>
+            <p className="text-xs mt-0.5" style={{ color: "rgba(250,243,227,0.6)" }}>Vegan durch Schwangerschaft und Stillzeit</p>
+          </div>
+
+          {/* Community */}
+          <div className="flex flex-col items-center text-center">
+            <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3" style={{ background: "rgba(250,243,227,0.12)", border: "1px solid rgba(250,243,227,0.2)" }}>
+              <Users size={22} className="text-blush" strokeWidth={1.5} />
+            </div>
+            <p className="font-semibold text-sm leading-snug" style={{ color: "#FAF3E3" }}>77.000+ Community</p>
+            <p className="text-xs mt-0.5" style={{ color: "rgba(250,243,227,0.6)" }}>Instagram & TikTok</p>
+          </div>
         </motion.div>
       </div>
     </section>
