@@ -68,7 +68,7 @@ export const NAV_LINKS: NavLink[] = [
       { label: "Sichere Schwangerschaft", href: "/sichere-schwangerschaft" },
       { label: "Sicherer Beikoststart", href: "/sicherer-beikoststart" },
       { label: "Pflanzlich in Form", href: "/pflanzlich-in-form" },
-      { label: "Unverträglichkeiten", href: "/kontakt#schreib-mir" },
+      { label: "Darmgesundheit", href: "/kontakt#schreib-mir" },
     ],
   },
   { label: "Supplements", href: "/supplements" },

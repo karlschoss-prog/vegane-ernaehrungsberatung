@@ -159,9 +159,9 @@ export default function PflanzlichInFormContent() {
                   Echte Ergebnisse
                 </motion.p>
                 <motion.h2 variants={fadeInUp} className="font-serif text-3xl sm:text-4xl font-light text-white mb-5 leading-snug">
-                  XX kg weniger.
+                  20 kg weniger.
                   <br />
-                  <em className="text-taupe not-italic font-semibold">In 12 Monaten.</em>
+                  <em className="text-taupe not-italic font-semibold">In 9 Monaten.</em>
                   <br />
                   Pflanzlich.
                 </motion.h2>
@@ -179,7 +179,7 @@ export default function PflanzlichInFormContent() {
                   beforeSrc="/christin-vorher.jpg"
                   afterSrc="/christin-nachher.jpg"
                   beforeLabel="Kurz vor der Geburt"
-                  afterLabel="12 Monate danach"
+                  afterLabel="9 Monate danach"
                 />
               </motion.div>
             </div>

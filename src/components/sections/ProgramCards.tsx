@@ -164,7 +164,7 @@ export default function ProgramCards() {
               </span>
             </Link>
 
-            {/* Coming Soon: Unverträglichkeiten */}
+            {/* Coming Soon: Darmgesundheit */}
             <div className="relative bg-white/60 rounded-card-lg p-7 border border-sage-light/50 overflow-hidden">
               <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]" aria-hidden="true" />
               <div className="relative">
@@ -175,10 +175,10 @@ export default function ProgramCards() {
                   </span>
                 </div>
                 <h3 className="font-serif text-2xl font-semibold text-charcoal/60 mb-3">
-                  Unverträglichkeiten
+                  Darmgesundheit
                 </h3>
                 <p className="text-sm text-soft-gray/80 leading-relaxed mb-5">
-                  Vegane Ernährung trotz Unverträglichkeiten: individuell angepasst, nährstoffsicher und alltagstauglich für dich und deine Familie.
+                  Vegane Ernährung für einen gesunden Darm: individuell angepasst, nährstoffsicher und alltagstauglich für dich und deine Familie.
                 </p>
                 <Link
                   href="/kontakt#schreib-mir"
