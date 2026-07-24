@@ -13,7 +13,7 @@ export default function AboutTeaser() {
 
   return (
     <section className="section-padding bg-cream">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
           variants={staggerContainer}

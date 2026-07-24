@@ -153,7 +153,7 @@ export default function SichererBeikostContent() {
 
       {/* Was dich erwartet */}
       <section className="section-padding bg-blush/10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={staggerContainer}
             initial={shouldReduceMotion ? "visible" : "hidden"}

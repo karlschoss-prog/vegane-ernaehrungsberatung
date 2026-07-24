@@ -46,7 +46,7 @@ export default function UeberMichContent() {
     <>
       {/* Hero */}
       <section className="section-padding bg-cream">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             ref={heroRef}
             variants={staggerContainer}
@@ -123,7 +123,7 @@ export default function UeberMichContent() {
 
       {/* Qualifikationen */}
       <section className="section-padding bg-cream" ref={qualiRef}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={staggerContainer}
             initial={shouldReduceMotion ? "visible" : "hidden"}

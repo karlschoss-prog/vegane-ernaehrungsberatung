@@ -18,7 +18,7 @@ export default function TrustBar() {
         <path d="M160 40 C100 50 70 90 90 110" stroke="white" strokeWidth="1.5" fill="none"/>
       </svg>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           ref={ref}
           variants={fadeInUp}

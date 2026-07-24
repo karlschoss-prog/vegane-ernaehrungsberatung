@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 
 interface BeforeAfterSliderProps {
   beforeSrc: string;
@@ -26,30 +26,64 @@ export default function BeforeAfterSlider({
     setPosition(Math.max(3, Math.min(97, pct)));
   }, []);
 
-  const handlePointerDown = (e: React.PointerEvent) => {
+  // Native touch listeners with passive:false so preventDefault() actually works
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const onTouchStart = (e: TouchEvent) => {
+      e.preventDefault();
+      isDragging.current = true;
+      updatePosition(e.touches[0].clientX);
+    };
+
+    const onTouchMove = (e: TouchEvent) => {
+      if (!isDragging.current) return;
+      e.preventDefault();
+      updatePosition(e.touches[0].clientX);
+    };
+
+    const onTouchEnd = () => {
+      isDragging.current = false;
+    };
+
+    el.addEventListener("touchstart", onTouchStart, { passive: false });
+    el.addEventListener("touchmove", onTouchMove, { passive: false });
+    el.addEventListener("touchend", onTouchEnd);
+    el.addEventListener("touchcancel", onTouchEnd);
+
+    return () => {
+      el.removeEventListener("touchstart", onTouchStart);
+      el.removeEventListener("touchmove", onTouchMove);
+      el.removeEventListener("touchend", onTouchEnd);
+      el.removeEventListener("touchcancel", onTouchEnd);
+    };
+  }, [updatePosition]);
+
+  // Mouse events for desktop
+  const handleMouseDown = (e: React.MouseEvent) => {
     isDragging.current = true;
-    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
     updatePosition(e.clientX);
   };
 
-  const handlePointerMove = (e: React.PointerEvent) => {
+  const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging.current) return;
     updatePosition(e.clientX);
   };
 
-  const handlePointerUp = () => {
+  const handleMouseUp = () => {
     isDragging.current = false;
   };
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden rounded-2xl select-none touch-none cursor-ew-resize"
-      style={{ aspectRatio: "3 / 4" }}
-      onPointerDown={handlePointerDown}
-      onPointerMove={handlePointerMove}
-      onPointerUp={handlePointerUp}
-      onPointerLeave={handlePointerUp}
+      className="relative w-full overflow-hidden rounded-2xl select-none cursor-ew-resize"
+      style={{ aspectRatio: "3 / 4", touchAction: "none" }}
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseUp}
     >
       {/* Nachher-Bild (Hintergrund, vollständig) */}
       <img

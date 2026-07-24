@@ -50,7 +50,7 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 w-full">
+      <div className="relative max-w-content mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
           {/* Text Content */}

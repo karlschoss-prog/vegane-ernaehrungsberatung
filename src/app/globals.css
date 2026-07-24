@@ -20,6 +20,9 @@
   /* Border Radius */
   --radius-card: 12px;
   --radius-card-lg: 20px;
+
+  /* Layout */
+  --max-width-content: 1280px;
 }
 
 :root {
@@ -41,6 +44,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

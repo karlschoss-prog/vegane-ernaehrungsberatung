@@ -5,8 +5,9 @@ import { motion, useReducedMotion, useScroll, useTransform, useSpring } from "fr
 import { Check, MessageCircle, ClipboardList, Search, Utensils, Users, Leaf } from "lucide-react";
 import Link from "next/link";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
-import { SITE } from "@/lib/constants";
+import { SITE, EBOOK } from "@/lib/constants";
 import BeforeAfterSlider from "@/components/ui/BeforeAfterSlider";
+import EbookPopup from "@/components/ui/EbookPopup";
 
 const included = [
   {
@@ -145,7 +146,7 @@ export default function PflanzlichInFormContent() {
 
       {/* Transformation */}
       <section className="section-padding bg-charcoal">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={staggerContainer}
             initial={shouldReduceMotion ? "visible" : "hidden"}
@@ -222,7 +223,7 @@ export default function PflanzlichInFormContent() {
 
       {/* Was dich erwartet */}
       <section className="section-padding bg-blush/10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={staggerContainer}
             initial={shouldReduceMotion ? "visible" : "hidden"}
@@ -370,6 +371,68 @@ export default function PflanzlichInFormContent() {
           </motion.div>
         </div>
       </section>
+
+      {/* E-Book */}
+      <section className="section-padding bg-blush/15">
+        <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={staggerContainer}
+            initial={shouldReduceMotion ? "visible" : "hidden"}
+            whileInView="visible"
+            viewport={{ once: true, margin: "-10%" }}
+            className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center bg-white rounded-card-lg p-7 sm:p-10 shadow-sm border border-blush/30"
+          >
+            {/* Cover */}
+            <motion.div variants={fadeInUp} className="order-1 lg:order-none">
+              <div className="w-full max-w-xs mx-auto overflow-hidden rounded-2xl shadow-lg border border-blush/20">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={EBOOK.cover}
+                  alt={`Cover: ${EBOOK.title}`}
+                  className="w-full h-auto"
+                />
+              </div>
+            </motion.div>
+
+            {/* Text */}
+            <div>
+              <motion.p variants={fadeInUp} className="text-xs font-semibold uppercase tracking-widest text-taupe mb-3">
+                Noch nicht bereit für 1:1? Starte hier
+              </motion.p>
+              <motion.h2 variants={fadeInUp} className="font-serif text-3xl sm:text-4xl font-light text-charcoal mb-3 leading-snug">
+                Das E-Book{" "}
+                <em className="text-taupe not-italic font-semibold">{EBOOK.title}</em>
+              </motion.h2>
+              <motion.p variants={fadeInUp} className="text-soft-gray leading-relaxed mb-6">
+                {EBOOK.description}
+              </motion.p>
+              <motion.ul variants={staggerContainer} className="space-y-2.5 mb-7">
+                {EBOOK.highlights.map((item) => (
+                  <motion.li key={item} variants={fadeInUp} className="flex items-start gap-2.5 text-charcoal">
+                    <span className="w-5 h-5 rounded-full bg-blush/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Check size={12} className="text-taupe" strokeWidth={2.5} />
+                    </span>
+                    <span className="text-sm">{item}</span>
+                  </motion.li>
+                ))}
+              </motion.ul>
+              <motion.div variants={fadeInUp} className="flex flex-wrap items-center gap-4">
+                <a
+                  href={EBOOK.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center font-semibold transition-all duration-200 px-7 py-3.5 text-base rounded-card-lg bg-taupe text-white hover:bg-taupe/90 shadow-sm"
+                >
+                  E-Book für {EBOOK.price} sichern
+                </a>
+                <span className="text-soft-gray text-sm">Sofortiger Download nach dem Kauf</span>
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      <EbookPopup />
     </>
   );
 }

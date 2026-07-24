@@ -27,7 +27,7 @@ export default function ProblemSection() {
         aria-hidden="true"
       />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           ref={ref}
           variants={staggerContainer}

@@ -13,6 +13,22 @@ export const SITE = {
   whatsapp: "https://wa.me/491784558828",
 };
 
+export const EBOOK = {
+  title: "Abnehmen im Mama-Alltag",
+  subtitle: "Weniger Stress. Weniger Heißhunger. Mehr Wohlfühlen.",
+  description:
+    "Der sanfte vegane Weg zurück zu mehr Energie, Sättigung und Wohlbefinden. Ohne Diäten, ohne Sportzwang und ohne schlechtes Gewissen.",
+  price: "9,99 €",
+  cover: "/ebook-cover.jpg",
+  link: "https://www.checkout-ds24.com/product/697275",
+  highlights: [
+    "7-Tage-Ernährungsplan & Einkaufsliste",
+    "Protein-Guide für vegane Mütter",
+    "Schnelle Rezepte & Notfall-Mahlzeiten",
+    "Strategien gegen Heißhunger",
+  ],
+};
+
 export const AFFILIATE = {
   watson: "https://watsonnutrition.de/?ref=CHRISTINSCHO",
   hopkins: "https://hopkinsformulations.de/?ref=CHRISTINSCHO",

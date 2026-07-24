@@ -15,7 +15,7 @@ export default function SectionWrapper({
 }: SectionWrapperProps) {
   return (
     <section id={id} className={`section-padding ${className}`}>
-      <div className={`mx-auto px-4 sm:px-6 lg:px-8 ${narrow ? "max-w-3xl" : "max-w-6xl"}`}>
+      <div className={`mx-auto px-4 sm:px-6 lg:px-8 ${narrow ? "max-w-3xl" : "max-w-content"}`}>
         {children}
       </div>
     </section>

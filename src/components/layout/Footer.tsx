@@ -34,7 +34,7 @@ export default function Footer() {
   return (
     <>
     <footer className="bg-charcoal text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+      <div className="max-w-content mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           {/* Spalte 1: Logo + Beschreibung + Social */}
           <div>
@@ -156,7 +156,7 @@ export default function Footer() {
 
     {/* seitenreif credit bar */}
     <div style={{ backgroundColor: "#1A1A18" }} className="w-full py-4 px-4">
-      <div className="max-w-6xl mx-auto flex flex-col items-center gap-1">
+      <div className="max-w-content mx-auto flex flex-col items-center gap-1">
         <span style={{ color: "rgba(255,255,255,0.30)", fontFamily: "DM Sans, sans-serif" }} className="text-[10px] uppercase tracking-widest">
           Website erstellt von
         </span>
